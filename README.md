@@ -19,7 +19,9 @@ Test account info:
 User: Wineap@mailinator.com
 Password: 12345
 
+#Layout
 
+![alt text](https://via.placeholder.com/350x150)
 
 #Requierments
 
