@@ -22,6 +22,8 @@ Password: 12345
 
 #Layout
 
+
+![alt text](https://github.com/drewphillips/wine_app/blob/master/supplemental/log%20in.png)
 ![alt text](https://github.com/drewphillips/wine_app/blob/master/supplemental/IMG_20180913_212435.jpg)
 ![alt text](https://github.com/drewphillips/wine_app/blob/master/supplemental/main%20nav.png)
 ![alt text](https://github.com/drewphillips/wine_app/blob/master/supplemental/grape%20categories.png)
