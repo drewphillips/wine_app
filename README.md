@@ -1,27 +1,48 @@
-# wine_app
+#Project 3: Wine App.
 
-Project 3: Wine App.
+Team Name: Wine not! Alexandra, kyle and Drew.
 
-Alexandra, kyle and Dean.
+App Name: Wine'd Up!
 
-Mobil friendly app that is a learning tool for wines by location or grape. Each grape would be a course that would concluded on a multiple chose test highlighting information leaned from the courses spanning the various types of wine. 
+Tag line: Our app is GREAPE!
+
+Mobil friendly website/app that is a learning tool for wines by location or grape. Each grape would be a instructional course that would concluded on a multiple chose test highlighting information leaned from the courses spanning the various types of wine. 
 
 External Links:
 
-Github: https://github.com/drewphillips/wine_app
+Github Project: https://github.com/drewphillips/wine_app/projects/1
 
-Heroku:
+Heroku: 
 
 PowerPoint:
 
 Test account info:
-
-User: Wineapp@mailinator.com
+User: Wineapp@mailinator.com,
 Password: 12345
 
 #Layout
 
-![alt text](https://github.com/drewphillips/wine_app/blob/readme/supplemental/IMG_20180913_212435.jpg)
+![alt text](https://github.com/drewphillips/wine_app/blob/master/supplemental/IMG_20180913_212435.jpg)
+
+#Tech Used
+
+React, Mogoose, Passport, GitHub, Slick, Pencil.
+
+New Tech used, Slick and Passport.
+
+#3) Who will be responsible for each part of the app.
+
+Kyle, Setting up components, Nav bar, log in screen,
+
+Ali, front end, design UX, Wine Courses.
+
+Dean, Database, and Authentication. 
+
+#   Monetization
+
+Partner with wine companions to promote thire wine over others. Give wine producers and wine growers the ability to enter thire own information, with an incentive to do so, i.e. set amount of advertising time in exchange. 
+
+Premium version would be for sommelier students or bulk buy of the app for all the employees in a restaurant. Free version would be limited to common wines and promoted wines. 
 
 #Requierments
 
