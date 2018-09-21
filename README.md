@@ -1,8 +1,10 @@
 #Project 3: Wine App.
 
-Team Name: Wine not! Alexandra, kyle and Dean.
+Team Name: Wine not! Alexandra, kyle and Drew.
 
-Our app is GREAPE!!!!
+App Name: Wine'd Up!
+
+Tag line: Our app is GREAPE!
 
 Mobil friendly website/app that is a learning tool for wines by location or grape. Each grape would be a instructional course that would concluded on a multiple chose test highlighting information leaned from the courses spanning the various types of wine. 
 
@@ -10,15 +12,13 @@ External Links:
 
 Github Project: https://github.com/drewphillips/wine_app/projects/1
 
-Heroku:
+Heroku: 
 
 PowerPoint:
 
 Test account info:
-
-User: Wineapp@mailinator.com
+User: Wineapp@mailinator.com,
 Password: 12345
-
 
 #Layout
 
@@ -26,9 +26,19 @@ Password: 12345
 
 #Tech Used
 
-React, Mogoose, Passport, Pencil.
+React, Mogoose, Passport, GitHub, Slick, Pencil.
 
-#Moitazation
+New Tech used, Slick and Passport.
+
+#3) Who will be responsible for each part of the app.
+
+Kyle, Setting up components, Nav bar, log in screen,
+
+Ali, front end, design UX, Wine Courses.
+
+Dean, Database, and Authentication. 
+
+#   Monetization
 
 Partner with wine companions to promote thire wine over others. Give wine producers and wine growers the ability to enter thire own information, with an incentive to do so, i.e. set amount of advertising time in exchange. 
 
