@@ -4,7 +4,9 @@ Project 3: Wine App.
 
 Alexandra, kyle and Dean.
 
-Mobil friendly app that is a learning tool for wines by location or grape. Each grape would be a course that would concluded on a multiple chose test highlighting information leaned from the courses spanning the various types of wine. 
+Our app is GREAPE!!!
+
+Mobil friendly website/app that is a learning tool for wines by location or grape. Each grape would be a instructional course that would concluded on a multiple chose test highlighting information leaned from the courses spanning the various types of wine. 
 
 External Links:
 
@@ -21,7 +23,17 @@ Password: 12345
 
 #Layout
 
-![alt text](https://github.com/drewphillips/wine_app/blob/readme/supplemental/IMG_20180913_212435.jpg)
+![alt text](https://via.placeholder.com/350x150)
+
+#Tech Used
+
+React, Mogoose, Passport, 
+
+#Moitazation
+
+Partner with wine companions to promote thire wine over others. Give wine producers and wine growers the ability to enter thire own information, with an incentive to do so, i.e. set amount of advertising time in exchange. 
+
+Premium version would be for sommelier students or bulk buy of the app for all the employees in a restaurant. Free version would be limited to common wines and promoted wines. 
 
 #Requierments
 
