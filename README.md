@@ -23,7 +23,7 @@ Password: 12345
 
 #Layout
 
-![alt text](https://via.placeholder.com/350x150)
+![alt text](https://github.com/drewphillips/wine_app/blob/master/supplemental/IMG_20180913_212435.jpg)
 
 #Tech Used
 
