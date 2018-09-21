@@ -1,8 +1,6 @@
-# wine_app
+#Project 3: Wine App.
 
-Project 3: Wine App.
-
-Alexandra, kyle and Dean.
+Team Name: Wine not! Alexandra, kyle and Dean.
 
 Our app is GREAPE!!!
 
@@ -10,7 +8,7 @@ Mobil friendly website/app that is a learning tool for wines by location or grap
 
 External Links:
 
-Github: https://github.com/drewphillips/wine_app
+Github Project: https://github.com/drewphillips/wine_app/projects/1
 
 Heroku:
 
@@ -21,13 +19,14 @@ Test account info:
 User: Wineapp@mailinator.com
 Password: 12345
 
+
 #Layout
 
 ![alt text](https://github.com/drewphillips/wine_app/blob/master/supplemental/IMG_20180913_212435.jpg)
 
 #Tech Used
 
-React, Mogoose, Passport, 
+React, Mogoose, Passport, Pencil.
 
 #Moitazation
 
