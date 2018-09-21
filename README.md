@@ -1,12 +1,12 @@
 #Project 3: Wine App.
 
-Team Name: Wine not! Alexandra, kyle and Drew.
+Team Name: Wine not! Alexandra, Kyle and Drew.
 
 App Name: Wine'd Up!
 
-Tag line: Our app is GREAPE!
+Tag line: Our app is GRAPE!
 
-Mobil friendly website/app that is a learning tool for wines by location or grape. Each grape would be a instructional course that would concluded on a multiple chose test highlighting information leaned from the courses spanning the various types of wine. 
+Mobil friendly website/app that is a learning tool for wines by location or grape. Each grape would have an instructional course that would concluded on a multiple chose test highlighting information leaned from the courses spanning the various types of wine. 
 
 External Links:
 
