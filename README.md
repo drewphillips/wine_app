@@ -2,7 +2,7 @@
 
 Team Name: Wine not! Alexandra, kyle and Dean.
 
-Our app is GREAPE!!!
+Our app is GREAPE!!!!
 
 Mobil friendly website/app that is a learning tool for wines by location or grape. Each grape would be a instructional course that would concluded on a multiple chose test highlighting information leaned from the courses spanning the various types of wine. 
 
