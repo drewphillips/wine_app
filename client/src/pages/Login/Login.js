@@ -3,12 +3,20 @@ import Jumbotron from "../../components/Jumbotron";
 // import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import Wrapper from "../../components/Wrapper";
+
 
 
 class Login extends Component {
 
     render() {
         return (
+
+      <Wrapper>
+      <Jumbotron>
+        <h1>Wine'd Up! </h1>
+      </Jumbotron>
+            
             <Container fluid>
                 <Row>
                     <Col size="md-6">
@@ -24,6 +32,7 @@ class Login extends Component {
                     </Col>
                 </Row>
             </Container>
+            </Wrapper>
 
         );
     }
