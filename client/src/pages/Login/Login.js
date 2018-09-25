@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 // import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-// import { Input, TextArea, FormBtn } from "../../components/Form";
+import { Input, TextArea, FormBtn } from "../../components/Form";
 
 
 class Login extends Component {
@@ -13,11 +13,13 @@ class Login extends Component {
                 <Row>
                     <Col size="md-6">
                         <h1>Wine'd Up! </h1>
-                        {/* <Form>
+
+                        <form>
                             <Input name="username" placeholder="Username (required)" />
                             <Input name="Password" placeholder="Password (required)" />
                             <FormBtn>Log In</FormBtn>
-                        </Form> */}
+                        </form>
+
 
                     </Col>
                 </Row>
