@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Jumbotron from "./components/Jumbotron";
 import Login from "./pages/Login";
 import Courses from "./pages/Courses";
 import CourseNav from "./pages/CourseNav";
 import MainNav from "./pages/MainNav";
-
-
-
+import Links from "./components/Links";
 
 const App = () => (
   <Router>
@@ -27,4 +25,3 @@ const App = () => (
 );
 
 export default App;
-

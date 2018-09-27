@@ -1,0 +1,10 @@
+button {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+
+#navbarSupportedContent {
+  z-index: 1;
+  width: 8rem;
+}
