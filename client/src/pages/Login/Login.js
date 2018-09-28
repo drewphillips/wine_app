@@ -4,6 +4,7 @@ import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Wrapper from "../../components/Wrapper";
+import Links from "../../components/Links";
 
 class Login extends Component {
   render() {
