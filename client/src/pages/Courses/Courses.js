@@ -3,6 +3,7 @@ import Jumbotron from "../../components/Jumbotron";
 import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
+import CarouselPage from "../../components/carousel/carouselPage.js";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
 
 class Courses extends Component {
@@ -39,6 +40,10 @@ class Courses extends Component {
 
             </Col>
           </Row>
+          <Row>
+          <CarouselPage>
+                </CarouselPage>
+            </Row>
         </Container>
       </Wrapper>
     );
