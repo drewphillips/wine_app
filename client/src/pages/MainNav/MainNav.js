@@ -3,30 +3,17 @@ import Jumbotron from "../../components/Jumbotron";
 import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import CarouselPage from "../../components/carousel/carouselPage.js";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
 
 
 
+class MainNav extends Component {
+    state = {
+      links: []
+    };
 
 
-
-class Courses extends Component {
-  state = {
-    courses: []
-  };
-
-  // componentDidMount() {
-  //   this.loadCourses();
-  // }
-
-  // loadCourses = () => {
-  //   API.getCourses()
-  //     .then(res => this.setState({ courses: res.data }))
-  //     .catch(err => console.log(err));
-  // };
-
-  render() {
+render() {
     return (
      
       <Wrapper>
@@ -45,14 +32,10 @@ class Courses extends Component {
 
             </Col>
           </Row>
-          <Row>
-          <CarouselPage>
-                </CarouselPage>
-            </Row>
         </Container>
       </Wrapper>
     );
   }
 }
 
-export default Courses;
+export default MainNav;
