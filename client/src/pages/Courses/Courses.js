@@ -6,6 +6,11 @@ import { Col, Row, Container } from "../../components/Grid";
 import CarouselPage from "../../components/carousel/carouselPage.js";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
 
+
+
+
+
+
 class Courses extends Component {
   state = {
     courses: []
