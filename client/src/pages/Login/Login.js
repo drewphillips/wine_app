@@ -4,24 +4,16 @@ import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Wrapper from "../../components/Wrapper";
-import Links from "../../components/Links";
 
 class Login extends Component {
   render() {
     return (
       <Wrapper>
-        <Jumbotron>
-          <h1>Wine'd Up! </h1>
-        </Jumbotron>
+        <Jumbotron />
 
         <Container fluid>
           <Row>
             <Col size="md-6">
-              <h1>Wine'd Up! </h1>
-              <Links
-                toggleController={this.toggleController}
-                isOpen={this.state.isOpen}
-              />
               <form>
                 <Input name="username" placeholder="Username (required)" />
                 <Input name="Password" placeholder="Password (required)" />

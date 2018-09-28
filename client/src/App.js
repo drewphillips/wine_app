@@ -6,7 +6,6 @@ import Login from "./pages/Login";
 import Courses from "./pages/Courses";
 import CourseNav from "./pages/CourseNav";
 import MainNav from "./pages/MainNav";
-import Links from "./components/Links";
 
 const App = () => (
   <Router>

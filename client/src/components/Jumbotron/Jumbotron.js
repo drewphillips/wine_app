@@ -6,10 +6,13 @@ import {
   NavbarNav,
   NavItem,
   NavLink,
-  NavbarToggler,
   Collapse,
   Container,
-  HamburgerToggler
+  HamburgerToggler,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from "mdbreact";
 
 class Jumbotron extends Component {
@@ -47,11 +50,21 @@ class Jumbotron extends Component {
             />
             <Collapse isOpen={this.state.collapse1} navbar>
               <NavbarNav left>
-                <NavItem active className="theLink">
+                <NavItem className="theLink">
                   <NavLink to="/login">Login</NavLink>
                 </NavItem>
-                <NavItem className="theLink">
-                  <NavLink to="/courses">Courses</NavLink>
+                <NavItem>
+                  <Dropdown>
+                    <NavLink to="/coursenav">
+                      <DropdownToggle nav caret>
+                        Courses
+                      </DropdownToggle>
+                    </NavLink>
+                    <DropdownMenu>
+                      <DropdownItem href="#">Red wines</DropdownItem>
+                      <DropdownItem href="#">White wines</DropdownItem>
+                    </DropdownMenu>
+                  </Dropdown>
                 </NavItem>
                 <NavItem className="theLink">
                   <NavLink to="#!">Exams</NavLink>

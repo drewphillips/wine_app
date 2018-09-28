@@ -17,6 +17,7 @@
 
 .theBurger {
   font-size: 1.7rem;
+  text-shadow: 0.1rem 0.1rem #000000;
 }
 
 .navbar-toggler.toggler-example {
@@ -24,8 +25,13 @@
 }
 
 .theLink {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-shadow: 0.1rem 0.1rem #000000;
+  color: white;
+}
+
+.Dropdown {
+  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 600px) {

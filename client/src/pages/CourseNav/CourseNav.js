@@ -3,6 +3,7 @@ import Jumbotron from "../../components/Jumbotron";
 import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
+import "./CourseNav.css";
 
 import { Input, TextArea, FormBtn } from "../../components/Form";
 
@@ -35,8 +36,8 @@ class CourseNav extends Component {
           <Container fluid>
             <Row>
               <Col size="md-6 sm-12">
-                <h1>White Grapes</h1>
-                <h1>Red Grapes</h1>
+                <h2>White Grapes</h2>
+                <h2>Red Grapes</h2>
               </Col>
             </Row>
           </Container>
