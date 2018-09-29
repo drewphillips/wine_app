@@ -61,10 +61,10 @@ class Jumbotron extends Component {
                   </NavLink>
                   <DropdownMenu>
                     <DropdownItem id="droppy" href="#">
-                      Red wines
+                      Red grapes
                     </DropdownItem>
                     <DropdownItem id="droppy" href="#">
-                      White wines
+                      White grapes
                       <DropdownItem id="droppy" href="/chardonnay">
                         Chardonnay
                       </DropdownItem>
