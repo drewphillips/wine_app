@@ -4,27 +4,38 @@ import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import "./CourseNav.css";
-
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import {
+  Collapse,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "mdbreact";
 
 class CourseNav extends Component {
-  // state = {
-  //   // links: []
-  // };
-
   constructor(props) {
     super(props);
+    this.toggle1 = this.toggle1.bind(this);
+    this.toggle2 = this.toggle2.bind(this);
 
     this.state = {
-      isOpen: false
+      collapse1: false,
+      collapse2: false
     };
-
-    this.toggleController = this.toggleController.bind(this);
   }
 
   toggleController() {
     console.log("toggle Controller!");
     this.setState(prevState => ({ isOpen: !prevState.isOpen }));
+  }
+
+  toggle1() {
+    this.setState({ collapse1: !this.state.collapse1 });
+  }
+
+  toggle2() {
+    this.setState({ collapse2: !this.state.collapse2 });
   }
 
   render() {
@@ -33,14 +44,38 @@ class CourseNav extends Component {
         <Jumbotron />
 
         <Wrapper>
-          <Container fluid>
-            <Row>
-              <Col size="md-6 sm-12">
-                <h2>White Grapes</h2>
-                <h2>Red Grapes</h2>
-              </Col>
-            </Row>
-          </Container>
+          <div>
+            <div>
+              <button
+                onClick={this.toggle1}
+                style={{ marginBottom: "1rem" }}
+                className="grapeType"
+              >
+                Red Grapes
+              </button>
+              <Collapse isOpen={this.state.collapse1}>
+                <p className="wines">Merlot</p>
+                <p className="wines">Pinot Noir</p>
+                <p className="wines">Syrah</p>
+              </Collapse>
+              <br />
+              <button
+                onClick={this.toggle2}
+                style={{ marginBottom: "1rem" }}
+                className="grapeType"
+              >
+                White grapes{" "}
+              </button>
+              <Collapse isOpen={this.state.collapse2}>
+                <a href="/chardonnay">
+                  <p className="wines">Chardonnay</p>
+                </a>
+                <p className="wines">Riesling</p>
+                <p className="wines">Sauvignon Blanc</p>
+              </Collapse>
+            </div>
+          </div>
+          ); }
         </Wrapper>
       </div>
     );

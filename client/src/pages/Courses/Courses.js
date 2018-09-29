@@ -3,12 +3,8 @@ import Jumbotron from "../../components/Jumbotron";
 import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
+import CarouselPage from "../../components/CarouselPage";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
-
-
-
-
-
 
 class Courses extends Component {
   state = {
@@ -27,25 +23,24 @@ class Courses extends Component {
 
   render() {
     return (
-     
-      <Wrapper>
-        <Jumbotron>
-      <h1>Wine'd Up! </h1>
-      </Jumbotron>
-              <Container fluid>
-
-          <Row>
-            <Col size="md-9">
-            </Col>
-            <Col size="md-6 sm-12">
+      <div>
+        <Jumbotron />
+        <Wrapper>
+          <Container fluid>
+            <Row>
+              <Col size="md-9" />
+              <Col size="md-6 sm-12">
                 <h1>Courses</h1>
-                
-                <h1>Exams</h1>
 
-            </Col>
-          </Row>
-        </Container>
-      </Wrapper>
+                <h1>Exams</h1>
+              </Col>
+            </Row>
+            <Row>
+              <CarouselPage />
+            </Row>
+          </Container>
+        </Wrapper>
+      </div>
     );
   }
 }

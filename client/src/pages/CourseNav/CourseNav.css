@@ -1,0 +1,29 @@
+body {
+  background: #440c0c;
+}
+
+button {
+  color: #440c0c;
+  font-size: 1.2rem;
+  width: 97%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  background: whitesmoke;
+  padding: 0.4rem;
+  margin: 1rem 0.4rem 0 0.4rem;
+  border-radius: 0.1rem;
+  cursor: pointer;
+}
+
+.courseDir {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background: #440c0c;
+}
+
+.wines {
+  color: white;
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 0.2rem 0 0 0.8rem;
+}
