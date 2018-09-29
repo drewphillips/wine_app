@@ -7,12 +7,15 @@ import Courses from "./pages/Courses";
 import CourseNav from "./pages/CourseNav";
 import MainNav from "./pages/MainNav";
 import Chardonnay from "./pages/Chardonnay";
+import Exam from "./pages/Exam";
 
 const App = () => (
   <Router>
     <div>
       {/* <Nav /> */}
       <Switch>
+        <Route exact path="/" component={Login}/>
+        <Route exact path="/exam" component={Exam} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/mainnav" component={MainNav} />
         <Route exact path="/coursenav" component={CourseNav} />
