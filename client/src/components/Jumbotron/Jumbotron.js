@@ -50,23 +50,36 @@ class Jumbotron extends Component {
             />
             <Collapse isOpen={this.state.collapse1} navbar>
               <NavbarNav left>
-                <NavItem className="theLink">
+                <NavItem id="theLink">
                   <NavLink to="/login">Login</NavLink>
                 </NavItem>
                 <NavItem>
-                  <Dropdown>
+                  <Dropdown id="theLink">
                     <NavLink to="/coursenav">
                       <DropdownToggle nav caret>
                         Courses
                       </DropdownToggle>
                     </NavLink>
                     <DropdownMenu>
-                      <DropdownItem href="#">Red wines</DropdownItem>
-                      <DropdownItem href="#">White wines</DropdownItem>
+                      <DropdownItem id="droppy" href="#">
+                        Red wines
+                      </DropdownItem>
+                      <DropdownItem id="droppy" href="#">
+                        White wines
+                        <DropdownItem id="droppy" href="#">
+                          Chardonnay
+                        </DropdownItem>
+                        <DropdownItem id="droppy" href="#">
+                          Sauvignon Blanc
+                        </DropdownItem>
+                        <DropdownItem id="droppy" href="#">
+                          Riesling
+                        </DropdownItem>
+                      </DropdownItem>
                     </DropdownMenu>
                   </Dropdown>
                 </NavItem>
-                <NavItem className="theLink">
+                <NavItem id="theLink">
                   <NavLink to="#!">Exams</NavLink>
                 </NavItem>
               </NavbarNav>
