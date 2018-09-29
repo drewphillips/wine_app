@@ -23,6 +23,7 @@
     "express": "^4.15.4",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.3.0",
+    "mdbootstrap": "^4.5.11",
     "mdbreact": "^4.8.0",
     "mongoose": "^5.2.17",
     "morgan": "^1.9.1",
