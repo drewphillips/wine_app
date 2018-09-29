@@ -2,21 +2,11 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
-import { Col, Row, Container } from "../../components/Grid";
-<<<<<<< HEAD
 import "./CourseNav.css";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-import {
-  Collapse,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from "mdbreact";
-=======
+import { Collapse } from "mdbreact";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
->>>>>>> master
 
 class CourseNav extends Component {
   constructor(props) {
@@ -45,7 +35,6 @@ class CourseNav extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <div>
         <Jumbotron />
 
@@ -84,27 +73,6 @@ class CourseNav extends Component {
           ); }
         </Wrapper>
       </div>
-=======
-     
-      <Wrapper>
-        <Jumbotron>
-      <h1>Wine'd Up! </h1>
-      </Jumbotron>
-              <Container fluid>
-
-          <Row>
-            <Col size="md-9">
-            </Col>
-            <Col size="md-6 sm-12">
-                <h1><OsLink to="/" label="White Grapes">White Grapes</OsLink></h1>
-                
-                <h1><OsLink to="/" label="Red Grapes">Red Grapes</OsLink></h1>
-
-            </Col>
-          </Row>
-        </Container>
-      </Wrapper>
->>>>>>> master
     );
   }
 }
