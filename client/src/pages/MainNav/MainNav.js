@@ -5,36 +5,25 @@ import Wrapper from "../../components/Wrapper";
 import { Col, Row, Container } from "../../components/Grid";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-
+import { Button } from "mdbreact";
 
 class MainNav extends Component {
-    state = {
-      links: []
-    };
+  state = {
+    links: []
+  };
 
-
-render() {
+  render() {
     return (
-     
-      <Wrapper>
-        <Jumbotron>
-      <h1>Wine'd Up! </h1>
-      </Jumbotron>
-              <Container fluid>
+      <div>
+        <Jumbotron />
 
-          <Row>
-            <Col size="md-9">
-            </Col>
-            <Col size="md-6 sm-12">
-            <h1><OsLink to="/" label="Courses">Courses</OsLink></h1>
-                
-                <h1><OsLink to="/" label="Exams">Exams</OsLink></h1>
-
-            </Col>
-          </Row>
-        </Container>
-      </Wrapper>
+        <Wrapper>
+          <main className="main">
+            <Button color="mdb-color">Courses</Button>
+            <Button color="mdb-color">Exams</Button>
+          </main>
+        </Wrapper>
+      </div>
     );
   }
 }

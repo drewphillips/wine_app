@@ -2,16 +2,11 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
-import { Col, Row, Container } from "../../components/Grid";
 import "./CourseNav.css";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-import {
-  Collapse,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from "mdbreact";
+import { Collapse } from "mdbreact";
+// import { Input, TextArea, FormBtn } from "../../components/Form";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class CourseNav extends Component {
   constructor(props) {
