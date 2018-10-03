@@ -1,0 +1,12 @@
+.mainBtn {
+  display: inline-block;
+}
+
+main {
+  background: white;
+  border: red 1rem;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}

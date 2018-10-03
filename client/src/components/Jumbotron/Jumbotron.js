@@ -39,10 +39,12 @@ class Jumbotron extends Component {
       <Navbar dark fixed-top navbar-expand-md id="theNav">
         <Container>
           <NavbarBrand id="wined">
-            <h1> Wine'd Up </h1>{" "}
+            <a href="/mainnav">
+              <h1> Wine'd Up </h1>
+            </a>
           </NavbarBrand>
           <HamburgerToggler
-            color="white"
+            color="elegant"
             id="hamburger1"
             className="theBurger"
             onClick={() => this.toggleSingleCollapse("collapse1")}
@@ -62,6 +64,12 @@ class Jumbotron extends Component {
                   <DropdownMenu>
                     <DropdownItem id="droppy" href="#">
                       Red grapes
+                      <DropdownItem id="droppy" href="#">
+                        Merlot
+                      </DropdownItem>
+                      <DropdownItem id="droppy" href="#">
+                        Pinot Noir
+                      </DropdownItem>
                     </DropdownItem>
                     <DropdownItem id="droppy" href="#">
                       White grapes
@@ -79,7 +87,7 @@ class Jumbotron extends Component {
                 </Dropdown>
               </NavItem>
               <NavItem id="theLink">
-                <NavLink to="#!">Exams</NavLink>
+                <NavLink to="/exam">Exams</NavLink>
               </NavItem>
             </NavbarNav>
           </Collapse>
