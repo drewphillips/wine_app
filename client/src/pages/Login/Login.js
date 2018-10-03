@@ -17,6 +17,7 @@ class Login extends Component {
             <form>
               <p className="h5 text-center mb-4">Sign in</p>
               <div className="grey-text">
+                <label for="email">Email</label>
                 <Input
                   label="Type your email"
                   icon="envelope"
@@ -26,6 +27,7 @@ class Login extends Component {
                   error="wrong"
                   success="right"
                 />
+                <label for="password">Password</label>
                 <Input
                   label="Type your password"
                   icon="lock"
