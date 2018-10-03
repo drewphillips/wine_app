@@ -5,3 +5,15 @@ p {
 h3 {
     color: black;
 }
+
+.burgundy{
+    height: 350px;
+    width: 350px;
+    margin-left: 250px;
+}
+
+.chardonnay12{
+    height: 400px;
+    width: 450px;
+    margin-left: 250px;
+}
