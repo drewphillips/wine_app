@@ -14,34 +14,30 @@ class Login extends Component {
 
         <Wrapper>
           <Container>
-            <Row>
-              <Col md="6">
-                <form>
-                  <p className="h5 text-center mb-4">Sign in</p>
-                  <div className="grey-text">
-                    <Input
-                      label="Type your email"
-                      icon="envelope"
-                      group
-                      type="email"
-                      validate
-                      error="wrong"
-                      success="right"
-                    />
-                    <Input
-                      label="Type your password"
-                      icon="lock"
-                      group
-                      type="password"
-                      validate
-                    />
-                  </div>
-                  <div className="text-center">
-                    <Button>Login</Button>
-                  </div>
-                </form>
-              </Col>
-            </Row>
+            <form>
+              <p className="h5 text-center mb-4">Sign in</p>
+              <div className="grey-text">
+                <Input
+                  label="Type your email"
+                  icon="envelope"
+                  group
+                  type="email"
+                  validate
+                  error="wrong"
+                  success="right"
+                />
+                <Input
+                  label="Type your password"
+                  icon="lock"
+                  group
+                  type="password"
+                  validate
+                />
+              </div>
+              <div className="text-center">
+                <Button color="elegant">Login</Button>
+              </div>
+            </form>
           </Container>
         </Wrapper>
       </div>
