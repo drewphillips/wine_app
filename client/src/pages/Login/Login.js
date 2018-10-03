@@ -4,7 +4,8 @@ import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Wrapper from "../../components/Wrapper";
-
+import Logo from '../../components/logo';
+import Logo1 from "../../components/logo"
 
 
 class Login extends Component {
@@ -31,6 +32,11 @@ class Login extends Component {
 
                     </Col>
                 </Row>
+                <Row>
+<Logo></Logo>
+
+<Logo1></Logo1> 
+                 </Row>
             </Container>
             </Wrapper>
 

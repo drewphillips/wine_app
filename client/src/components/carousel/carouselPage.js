@@ -63,7 +63,6 @@ class CarouselPage extends Component {
 export default CarouselPage;
 
 
-
 // import React from "react";
 // import "./carousel.css";
 // // import "./carouselContainer.js";
