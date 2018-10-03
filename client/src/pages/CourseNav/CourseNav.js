@@ -6,13 +6,7 @@ import "./CourseNav.css";
 import { Collapse } from "mdbreact";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
-import {
-  Collapse,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from "mdbreact";
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "mdbreact";
 
 class CourseNav extends Component {
   constructor(props) {
@@ -46,7 +40,8 @@ class CourseNav extends Component {
 
         <Wrapper>
           <div>
-            <div>
+            <div id="coursesNav">
+              <h2>Courses</h2>
               <button
                 onClick={this.toggle1}
                 style={{ marginBottom: "1rem" }}
