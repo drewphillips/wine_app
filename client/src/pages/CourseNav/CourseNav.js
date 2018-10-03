@@ -6,7 +6,6 @@ import "./CourseNav.css";
 import { Collapse } from "mdbreact";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
-import { Input, TextArea, FormBtn } from "../../components/Form";
 import {
   Collapse,
   Dropdown,
