@@ -4,46 +4,6 @@ import "./login.css";
 import Jumbotron from "../../components/Jumbotron";
 // import API from "../../utils/API";
 import Wrapper from "../../components/Wrapper";
-<<<<<<< HEAD
-import Logo from '../../components/logo';
-import Logo1 from "../../components/logo"
-
-
-class Login extends Component {
-
-    render() {
-        return (
-
-      <Wrapper>
-      <Jumbotron>
-        <h1>Wine'd Up! </h1>
-      </Jumbotron>
-            
-            <Container fluid>
-                <Row>
-                    <Col size="md-6">
-                        <h1>Wine'd Up! </h1>
-
-                        <form>
-                            <Input name="username" placeholder="Username (required)" />
-                            <Input name="Password" placeholder="Password (required)" />
-                            <FormBtn>Log In</FormBtn>
-                        </form>
-
-
-                    </Col>
-                </Row>
-                <Row>
-<Logo></Logo>
-
-<Logo1></Logo1> 
-                 </Row>
-            </Container>
-            </Wrapper>
-
-        );
-    }
-=======
 import { Container, Row, Col, Input, Button } from "mdbreact";
 
 class Login extends Component {
@@ -87,7 +47,6 @@ class Login extends Component {
       </div>
     );
   }
->>>>>>> master
 }
 
 export default Login;
