@@ -3,10 +3,17 @@ import Jumbotron from "../../components/Jumbotron";
 import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
 import "./CourseNav.css";
-import { Input, TextArea, FormBtn } from "../../components/Form";
 import { Collapse } from "mdbreact";
-// import { Input, TextArea, FormBtn } from "../../components/Form";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Col, Row, Container } from "../../components/Grid";
+import { Input, TextArea, FormBtn } from "../../components/Form";
+import {
+  Collapse,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "mdbreact";
 
 class CourseNav extends Component {
   constructor(props) {
@@ -76,18 +83,5 @@ class CourseNav extends Component {
     );
   }
 }
-
-const OsLink = ({ label, to, activeOnlyWhenExact }) => (
-  <Route
-    path={to}
-    exact={activeOnlyWhenExact}
-    children={({ match }) => (
-      <div className={match ? "active" : ""}>
-        {match ? " " : ""}
-        <Link to={to}>{label}</Link>
-      </div>
-    )}
-  />
-);
 
 export default CourseNav;
