@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
 import  {Carousel, CarouselCaption, CarouselInner, CarouselItem, View, Mask, Container } from 'mdbreact';
-import "./carousel.css"
+import "./CarouselPage.css"
 class CarouselPage extends Component {
   render(){
     return(
       <Container>
-        <h4 className="mt-5 mb-2">Basic example</h4>
+        <h4 className="mt-5 mb-2">Chardonnay</h4>
         <Carousel
           activeItem={1}
-          length={4}
           showControls={true}
           showIndicators={false}
           className="z-depth-1">
           <CarouselInner>
             <CarouselItem itemId="1">
               <View>
-                <img className="d-block w-100" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NCA0NDQ8NDQcNFREWFhURFRMYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLjcBCgoKDQ0NDw0NDisZFRkrKzc3KystNysrKystLSsrKy0rKysrKysrKysrKystKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQIDBAf/xAAjEAEBAAICAQQCAwAAAAAAAAAAAQIRAzEhElFxsUHBYYGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD7aACgAKhAUABUAUAAEBQAEVAAAEqoAAAzWkBhplYDOURrJmAzfDpjWMomNVHVWNqitgAKigAAoigAAAAqAAAAAACAUAAAEABMmWqyCsNsZgMXxW2eRUJRkQekAUWIAoAAAKIAoAAgCiKACAAAAAIAAADFbYoLGc1hl0DEMuhQclZoqPWIqKAAKgChsAAAAA2bADYAAAAACAAAACbAZrSUEW9VIt6ByajLUUcsu6Ln3QR6AEVREtBVAAAFEAURQAAAQFEAXaAAAACAqAAmSpkCQy6DPoHNrFmNxUcc+6rGV81QeoBFSkS1YDQgCgAAAAAAAAAAAAACbAAAAAGaqARnkbjnl2CRpIZ3UoOACo9ZaJUVG2Me2wAAAANqgCiAKJs2CiAKbQA2AAAACbBUACpCrAK5tZ1iA1HPmvUdY8+d3QAFR6qzWqxkiri0zg1QIqQBQAAAAAAAAAAAAABAAAAAEW0YyoM9tRJGgY5ctT5cYvJlu/RjFRZBvSA7VmtVjJFawarGFbAgkUAAAAFEAUQBdiAAAAAAAAACCWgWs6GpAJHPmy/E/trkz18/hwEHTGM4xeTLU/m9KJlyao5APbWK3WMkUx7bc46UEjTKgsEAUDYAAAAAAAGwBNgKIAAloFrK6XQEiZ5a+Uz5Ndd/TjQLdkiyNyKh1NuFu7teTPfx9pIC6GtAPTWK3WKisuk6c61x0GqQQGgSgoIChAAAAAAAAAA2aAQ0WydsZcvsDdsnblnyb68fti7qzFRGpi1MVtk7ENacOTk34nX2nJncvhJAJHSRMY6YwEmKt6EVus1pKDnSeFyjKjqiYX8KgsqsNSgKiAtiTL3XaWA0Od3FnJ7wGzaTKALs2mk0C7nunrielPSC3kZudrXpPSDnpZi6aS2TuiJMV055c0/E/wBcss7e6o6580nXn9ONtvaNTEEkdMcVmLUgEjchIqKCgAoDFZoKhj26AipUgKjSUEUaAGaxkgDNa46Co7AIolUBFAHDmt93EFQQAbxdIoCrAQVYoKAA/9k=" alt="First slide" />
+                <img className="chardonnay1" src="/../../assets/images/chardonnay1.png" alt="First slide" />
                 <Mask overlay="black-light"></Mask>
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">wine</h3>
-                <p>WINEWINEWINE</p>
+                <h3 className="h3-responsive">Chardonnay</h3>
               </CarouselCaption>
             </CarouselItem>
             <CarouselItem itemId="2">
@@ -61,6 +59,7 @@ class CarouselPage extends Component {
 }
 
 export default CarouselPage;
+
 
 
 // import React from "react";
