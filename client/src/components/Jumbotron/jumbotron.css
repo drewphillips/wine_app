@@ -1,12 +1,69 @@
-.jumbotron {
-    background-image: url("../../assets/images/winegrapes-shutterstock.jpg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 200px;
-    width: 100%;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+.navbar {
+  background-image: url("../../assets/images/winegrapes-shutterstock.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 1rem;
+  margin: 0;
 }
 
+.navbar h1 {
+  font-size: 4.8rem;
+  font-family: "Spirax", cursive;
+  text-shadow: 0.1rem 0.1rem #000000;
+  color: white;
+}
+
+#theNav {
+  width: 100%;
+}
+
+.theBurger {
+  font-size: 1.7rem;
+  text-shadow: 0.1rem 0.1rem #000000;
+}
+
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+
+#theLink {
+  font-size: 1.4rem;
+  text-shadow: 0.1rem 0.1rem #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+li#theLink {
+  color: white;
+}
+
+#droppy {
+  font-size: 1.4rem;
+  text-shadow: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background-color: white;
+    padding-top: 0.4rem;
+    border-radius: 0;
+    text-shadow: none;
+    color: #440c0c;
+  }
+
+  .navbar h1 {
+    font-size: 2.9rem;
+  }
+
+  .theBurger {
+    font-size: 1rem;
+    text-shadow: none;
+  }
+
+  .theLink {
+    font-size: 1.2rem;
+  }
+}
