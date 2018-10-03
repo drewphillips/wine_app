@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./login.css";
+import Logo from "./logo"
 
 import Jumbotron from "../../components/Jumbotron";
 // import API from "../../utils/API";
@@ -42,6 +43,7 @@ class Login extends Component {
                 </form>
               </Col>
             </Row>
+            <Logo></Logo>
           </Container>
         </Wrapper>
       </div>
