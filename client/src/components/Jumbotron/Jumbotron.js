@@ -39,7 +39,9 @@ class Jumbotron extends Component {
       <Navbar dark fixed-top navbar-expand-md id="theNav">
         <Container>
           <NavbarBrand id="wined">
-            <h1> Wine'd Up </h1>{" "}
+            <a href="/mainnav">
+              <h1> Wine'd Up </h1>
+            </a>
           </NavbarBrand>
           <HamburgerToggler
             color="elegant"
