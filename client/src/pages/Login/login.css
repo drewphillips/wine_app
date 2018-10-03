@@ -1,11 +1,17 @@
 form {
-    background: white;
-    margin-top: 300px;
-    margin-left: 280px;
-    width: 400px;
-    height: 325px;
-    }
+  background: white;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 100%;
+  height: 26rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+}
 
 .greytext {
-    width: 300px;
+  width: 300px;
+}
+
+label {
+  font-size: 1.2rem;
 }

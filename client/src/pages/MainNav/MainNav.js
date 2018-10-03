@@ -5,36 +5,36 @@ import Wrapper from "../../components/Wrapper";
 import { Col, Row, Container } from "../../components/Grid";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-
+import { Button } from "mdbreact";
+import "./MainNav.css";
 
 class MainNav extends Component {
-    state = {
-      links: []
-    };
+  state = {
+    links: []
+  };
 
-
-render() {
+  render() {
     return (
-     
-      <Wrapper>
-        <Jumbotron>
-      <h1>Wine'd Up! </h1>
-      </Jumbotron>
-              <Container fluid>
+      <div>
+        <Jumbotron />
 
-          <Row>
-            <Col size="md-9">
-            </Col>
-            <Col size="md-6 sm-12">
-            <h1><OsLink to="/" label="Courses">Courses</OsLink></h1>
-                
-                <h1><OsLink to="/" label="Exams">Exams</OsLink></h1>
-
-            </Col>
-          </Row>
-        </Container>
-      </Wrapper>
+        <Wrapper>
+          <Container>
+            <main id="whitebg">
+              <p>
+                Welcome to Wine'd Up, the easiest way to level up your wine
+                knowledge. Start learning or test your wine intelligence!
+              </p>
+              <a href="/coursenav">
+                <Button color="elegant">Courses</Button>
+              </a>
+              <a href="/exam">
+                <Button color="elegant">Exams</Button>
+              </a>
+            </main>
+          </Container>
+        </Wrapper>
+      </div>
     );
   }
 }
