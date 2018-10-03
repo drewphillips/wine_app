@@ -15,3 +15,10 @@ form {
 label {
   font-size: 1.2rem;
 }
+
+#Logo {
+ 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}

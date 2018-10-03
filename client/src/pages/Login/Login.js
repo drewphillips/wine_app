@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "./login.css";
-import Logo from "./logo"
+
 
 import Jumbotron from "../../components/Jumbotron";
 // import API from "../../utils/API";
 import Wrapper from "../../components/Wrapper";
 import { Container, Row, Col, Input, Button } from "mdbreact";
+import Logo from "../../components/logo"
 
 class Login extends Component {
   render() {
@@ -40,10 +41,13 @@ class Login extends Component {
                   <div className="text-center">
                     <Button>Login</Button>
                   </div>
+                  <div id = "Logo">
+                  <Logo />
+                  </div>
                 </form>
               </Col>
             </Row>
-            <Logo></Logo>
+           
           </Container>
         </Wrapper>
       </div>
