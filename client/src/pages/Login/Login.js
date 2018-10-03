@@ -17,8 +17,8 @@ class Login extends Component {
         <Wrapper>
           <Container>
             <Row>
-              <Col md="6">
-                <form>
+              
+                <form id = "LoginForm">
                   <p className="h5 text-center mb-4">Sign in</p>
                   <div className="grey-text">
                     <Input
@@ -45,7 +45,7 @@ class Login extends Component {
                   <Logo />
                   </div>
                 </form>
-              </Col>
+              
             </Row>
            
           </Container>
