@@ -744,13 +744,10 @@ material-ui-pickers@^1.0.0-rc.12:
     react-transition-group "^2.4.0"
     recompose "^0.28.0"
 
-<<<<<<< HEAD
 mdbootstrap@^4.5.11:
   version "4.5.11"
   resolved "https://registry.yarnpkg.com/mdbootstrap/-/mdbootstrap-4.5.11.tgz#d7450e092f09fb11f00ed2cee344abdec5acd044"
 
-=======
->>>>>>> master
 mdbreact@^4.8.0:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/mdbreact/-/mdbreact-4.8.0.tgz#9027e439c75c0a6a7ea246d5f6e51b997f476bb8"
