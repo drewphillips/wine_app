@@ -1,4 +1,4 @@
-form {
+#LoginForm {
   background: white;
   margin: 0 auto;
   margin-top: 1rem;
@@ -14,4 +14,10 @@ form {
 
 label {
   font-size: 1.2rem;
+}
+
+#Logo {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
