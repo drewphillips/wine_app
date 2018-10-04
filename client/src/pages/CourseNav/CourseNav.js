@@ -4,8 +4,6 @@ import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
 import "./CourseNav.css";
 import { Collapse } from "mdbreact";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "mdbreact";
 
 class CourseNav extends Component {
   constructor(props) {
