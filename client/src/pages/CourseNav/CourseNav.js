@@ -5,7 +5,6 @@ import Wrapper from "../../components/Wrapper";
 import "./CourseNav.css";
 import { Collapse } from "mdbreact";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Col, Row, Container } from "../../components/Grid";
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "mdbreact";
 
 class CourseNav extends Component {
@@ -42,24 +41,17 @@ class CourseNav extends Component {
           <div>
             <div id="coursesNav">
               <h2>Courses</h2>
-              <button
-                onClick={this.toggle1}
-                style={{ marginBottom: "1rem" }}
-                className="grapeType"
-              >
+              <button onClick={this.toggle1} style={{ marginBottom: "1rem" }}>
                 Red Grapes
               </button>
               <Collapse isOpen={this.state.collapse1}>
+                <p className="wines">Cabernet Sauvignon</p>
                 <p className="wines">Merlot</p>
                 <p className="wines">Pinot Noir</p>
                 <p className="wines">Syrah</p>
               </Collapse>
               <br />
-              <button
-                onClick={this.toggle2}
-                style={{ marginBottom: "1rem" }}
-                className="grapeType"
-              >
+              <button onClick={this.toggle2} style={{ marginBottom: "1rem" }}>
                 White grapes{" "}
               </button>
               <Collapse isOpen={this.state.collapse2}>

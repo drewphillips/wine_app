@@ -47,6 +47,7 @@ class Jumbotron extends Component {
             color="elegant"
             id="hamburger1"
             className="theBurger"
+            tabIndex="0"
             onClick={() => this.toggleSingleCollapse("collapse1")}
           />
           <Collapse isOpen={this.state.collapse1} navbar>
