@@ -14,7 +14,7 @@ class Login extends Component {
 
         <Wrapper>
           <Container>
-            <form>
+            <form id="LoginForm">
               <p className="h5 text-center mb-4">Sign in</p>
               <div className="grey-text">
                 <label for="email">Email</label>

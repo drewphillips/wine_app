@@ -9,18 +9,18 @@ import {
   Container
 } from "mdbreact";
 import "./CarouselPage.css";
-import chardonnay1 from "../../assets/images/images/chardonnay1.png";
-import chardonnay2 from "../../assets/images/images/chardonnay2.png";
-import chardonnay3 from "../../assets/images/images/chardonnay3.png";
-import chardonnay4 from "../../assets/images/images/chardonnay4.png";
-import chardonnay5 from "../../assets/images/images/chardonnay5.png";
-import chardonnay6 from "../../assets/images/images/chardonnay6.png";
-import chardonnay7 from "../../assets/images/images/chardonnay7.png";
-import chardonnay8 from "../../assets/images/images/chardonnay8.png";
-import chardonnay9 from "../../assets/images/images/chardonnay9.png";
-import chardonnay10 from "../../assets/images/images/chardonnay10.png";
-import malo from "../../assets/images/images/malo.png";
-import burgundy from "../../assets/images/images/Burgundy-map.png";
+import chardonnay1 from "../../assets/images/chardonnay1.png";
+import chardonnay2 from "../../assets/images/chardonnay2.png";
+import chardonnay3 from "../../assets/images/chardonnay3.png";
+import chardonnay4 from "../../assets/images/chardonnay4.png";
+import chardonnay5 from "../../assets/images/chardonnay5.png";
+import chardonnay6 from "../../assets/images/chardonnay6.png";
+import chardonnay7 from "../../assets/images/chardonnay7.png";
+import chardonnay8 from "../../assets/images/chardonnay8.png";
+import chardonnay9 from "../../assets/images/chardonnay9.png";
+import chardonnay10 from "../../assets/images/chardonnay10.png";
+import malo from "../../assets/images/malo.png";
+import burgundy from "../../assets/images/Burgundy-map.png";
 
 class CarouselPage extends Component {
   render() {
