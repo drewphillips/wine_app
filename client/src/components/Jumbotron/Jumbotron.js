@@ -88,7 +88,7 @@ class Jumbotron extends Component {
                 </Dropdown>
               </NavItem>
               <NavItem id="theLink">
-                <NavLink to="/exam">Exams</NavLink>
+                <NavLink to="/examhome">Exams</NavLink>
               </NavItem>
             </NavbarNav>
           </Collapse>
