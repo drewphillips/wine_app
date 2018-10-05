@@ -5,6 +5,7 @@ import Wrapper from "../../components/Wrapper";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Button } from "mdbreact";
 import "./MainNav.css";
+import Logo from "../../components/logo";
 
 class MainNav extends Component {
   state = {
@@ -28,6 +29,9 @@ class MainNav extends Component {
             <a href="/exam">
               <Button color="elegant">Exams</Button>
             </a>
+            <div id="Logo">
+              <Logo />
+            </div>
           </main>
         </Wrapper>
       </div>
