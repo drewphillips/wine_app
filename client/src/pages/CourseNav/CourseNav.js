@@ -4,6 +4,7 @@ import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
 import "./CourseNav.css";
 import { Collapse } from "mdbreact";
+import Logo from "../../components/logo";
 
 class CourseNav extends Component {
   constructor(props) {
@@ -59,6 +60,9 @@ class CourseNav extends Component {
                 <p className="wines">Riesling</p>
                 <p className="wines">Sauvignon Blanc</p>
               </Collapse>
+              <div id="Logo">
+                <Logo />
+              </div>
             </div>
           </div>
           ); }

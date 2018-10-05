@@ -1,0 +1,34 @@
+.navbar {
+  background-image: url("../../assets/images/winegrapes-shutterstock.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.navbar h1 {
+  font-size: 4.7rem;
+  font-family: "Spirax", cursive;
+  text-shadow: 0.1rem 0.1rem #000000;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background-color: white;
+    padding-top: 0.4rem;
+    border-radius: 0;
+    text-shadow: none;
+    color: #440c0c;
+  }
+
+  .navbar h1 {
+    font-size: 2.9rem;
+  }
+
+  .theLink {
+    font-size: 1.2rem;
+  }
+}
