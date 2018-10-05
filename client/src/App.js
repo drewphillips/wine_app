@@ -8,6 +8,7 @@ import CourseNav from "./pages/CourseNav";
 import MainNav from "./pages/MainNav";
 import Chardonnay from "./pages/Chardonnay";
 import Exam from "./pages/Exam";
+var auth = require('./routes/auth');
 
 const App = () => (
   <Router>
@@ -27,5 +28,7 @@ const App = () => (
     </div>
   </Router>
 );
+
+app.use('/api/auth', auth);
 
 export default App;
