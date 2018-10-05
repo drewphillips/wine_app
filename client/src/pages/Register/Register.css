@@ -1,3 +1,7 @@
+#create-account {
+  width: 100%;
+}
+
 .LoginForm {
   background: white;
   margin: 0 auto;
@@ -6,12 +10,4 @@
   min-height: 10rem;
   padding: 1rem;
   font-family: "Roboto", sans-serif;
-}
-
-.greytext {
-  width: 300px;
-}
-
-#login {
-  margin-bottom: 1rem;
 }

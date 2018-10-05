@@ -6,7 +6,7 @@ class Logo extends Component {
   render() {
     return (
       <Animation type="zoomInDown" count={1} duration="3s">
-        <img height="260" src={wineLogo} alt="Transparent MDB Logo" />
+        <img height="260" src={wineLogo} alt="Wine'd Up Logo" />
       </Animation>
     );
   }
