@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./login.css";
 
-import LoginJumbo from "../../components/Jumbotron";
+import LoginJumbo from "../../components/LoginJumbo";
 // import API from "../../utils/API";
 import Wrapper from "../../components/Wrapper";
 import { Input, Button } from "mdbreact";
@@ -14,10 +14,9 @@ class Login extends Component {
         <LoginJumbo />
 
         <Wrapper>
-          <form id="LoginForm">
-            <h2>Log in</h2>
+          <form className="LoginForm">
+            <h2>Sign in to get started</h2>
             <div className="grey-text">
-              <label for="email">Email</label>
               <Input
                 label="Type your email"
                 icon="envelope"
@@ -27,7 +26,6 @@ class Login extends Component {
                 error="wrong"
                 success="right"
               />
-              <label for="password">Password</label>
               <Input
                 label="Type your password"
                 icon="lock"
@@ -36,11 +34,18 @@ class Login extends Component {
                 validate
               />
             </div>
-            <div className="text-center">
+            <div>
               <Button id="login" type="login" color="elegant">
                 Login
               </Button>
             </div>
+          </form>
+          <form className="LoginForm">
+            <h2>Or create a new account</h2>
+            <Button id="register" type="register" color="elegant">
+              Register
+            </Button>
+
             <div id="Logo">
               <Logo />
             </div>

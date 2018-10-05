@@ -7,7 +7,7 @@ class LoginJumbo extends Component {
     return (
       <Navbar dark fixed-top id="theNav">
         <Container>
-          <NavbarBrand id="wined">
+          <NavbarBrand>
             <h1> Wine'd Up </h1>
           </NavbarBrand>
         </Container>
