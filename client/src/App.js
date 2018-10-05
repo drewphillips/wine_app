@@ -10,6 +10,8 @@ import Chardonnay from "./pages/Chardonnay";
 import Exam from "./pages/Exam";
 import Results from "./pages/Results";
 import Register from "./pages/Register";
+import ExamHome from "./pages/ExamHome";
+import Exam2 from "./pages/Exam2";
 
 const App = () => (
   <Router>
@@ -25,6 +27,8 @@ const App = () => (
         <Route exact path="/chardonnay" component={Chardonnay} />
         <Route exact path="/results" component={Results} />
         <Route exact path="/register" component={Register} />
+        <Route exact path="/examhome" component={ExamHome} />
+        <Route exact path="/examtwo" component={Exam2} />
 
         {/* <Route component={NoMatch} /> */}
       </Switch>
