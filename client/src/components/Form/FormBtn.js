@@ -1,11 +1,12 @@
 import React from "react";
+import { Button } from "mdbreact";
 
 export const FormBtn = props => (
-  <button
+  <Button
     {...props}
     style={{ float: "right", marginBottom: 10 }}
-    className="btn btn-success"
+    color="elegant"
   >
     {props.children}
-  </button>
+  </Button>
 );

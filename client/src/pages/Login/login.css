@@ -2,8 +2,8 @@
   background: white;
   margin: 0 auto;
   margin-top: 1rem;
-  width: 50%;
-  height: 26rem;
+  width: 90%;
+  height: 33rem;
   padding: 1rem;
   font-family: "Roboto", sans-serif;
   border-radius: 2%;
@@ -15,6 +15,10 @@
 
 label {
   font-size: 1.2rem;
+}
+
+#login {
+  margin-bottom: 1rem;
 }
 
 #Logo {
