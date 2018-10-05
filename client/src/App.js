@@ -9,6 +9,8 @@ import MainNav from "./pages/MainNav";
 import Chardonnay from "./pages/Chardonnay";
 import Exam from "./pages/Exam";
 var auth = require('./routes/auth');
+import ExamHome from "./pages/ExamHome"
+import Exam2 from "./pages/Exam2"
 
 const App = () => (
   <Router>
@@ -22,6 +24,9 @@ const App = () => (
         <Route exact path="/coursenav" component={CourseNav} />
         <Route exact path="/courses" component={Courses} />
         <Route exact path="/chardonnay" component={Chardonnay} />
+        <Route exact path="/examhome" component={ExamHome} />
+        <Route exact path="/examtwo" component={Exam2} />
+
 
         {/* <Route component={NoMatch} /> */}
       </Switch>
