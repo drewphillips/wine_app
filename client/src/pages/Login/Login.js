@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./login.css";
 
-import Jumbotron from "../../components/Jumbotron";
+import LoginJumbo from "../../components/Jumbotron";
 // import API from "../../utils/API";
 import Wrapper from "../../components/Wrapper";
 import { Input, Button } from "mdbreact";
@@ -11,11 +11,11 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <Jumbotron />
+        <LoginJumbo />
 
         <Wrapper>
           <form id="LoginForm">
-            <p className="h5 text-center mb-4">Sign in</p>
+            <h2>Log in</h2>
             <div className="grey-text">
               <label for="email">Email</label>
               <Input
