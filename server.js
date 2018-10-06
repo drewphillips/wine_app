@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
-const routes = require("./routes");
+const examRoutes = require("./routes/examRoute");
+const userRoutes = require("./routes/userRoute")
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -9,7 +10,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.use(routes);
+app.use("/api/exam", examRoutes);
+app.use("/api/user",userRoutes);
+app.use("/login", apiRoute);
 
 // Send every request to the React app
 // Define any API routes before this runs
