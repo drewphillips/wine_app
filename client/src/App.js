@@ -8,16 +8,14 @@ import CourseNav from "./pages/CourseNav";
 import MainNav from "./pages/MainNav";
 import Chardonnay from "./pages/Chardonnay";
 import Exam from "./pages/Exam";
-<<<<<<< HEAD
-var auth = require('./routes/auth');
-import ExamHome from "./pages/ExamHome"
-import Exam2 from "./pages/Exam2"
-=======
 import Results from "./pages/Results";
 import Register from "./pages/Register";
 import ExamHome from "./pages/ExamHome";
 import Exam2 from "./pages/Exam2";
->>>>>>> master
+
+var auth = require('./routes/auth');
+
+// app.use('/api/auth', auth);
 
 const App = () => (
   <Router>
@@ -42,6 +40,6 @@ const App = () => (
   </Router>
 );
 
-app.use('/api/auth', auth);
+
 
 export default App;
