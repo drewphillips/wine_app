@@ -6,10 +6,13 @@ module.exports = function (sequelize, DataTypes) {
         },
         question_1: {
             type: DataTypes.STRING,
-            allowNull: false
+            // answersForUser [ akj, kj, kj, kj ]
+            // correctAnswer: a
+            allowNull: false,
         },
         answer_1: {
             type: DataTypes.STRING,
+            
             allowNull: false
         },
         question_2: {
