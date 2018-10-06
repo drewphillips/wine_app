@@ -5,8 +5,6 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
         
         q1:DataTypes.STRING,
-        // answersForUser [ akj, kj, kj, kj ]
-        // correctAnswer: a
         allowNull: false,
         
         q2: DataTypes.STRING,
