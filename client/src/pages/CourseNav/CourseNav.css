@@ -19,6 +19,7 @@ button {
   color: white;
   font-family: "Roboto", sans-serif;
   background: #440c0c;
+  padding: 1rem;
 }
 
 #coursesNav {

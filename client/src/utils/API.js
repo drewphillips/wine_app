@@ -10,7 +10,7 @@ import axios from "axios";
   },
 
   createUser: function(id){
-    return axios.post("/api/users" + id)
+    return axios.post("/api/user/createUser" + id)
   },
 
   postScore: function(id){
@@ -19,5 +19,9 @@ import axios from "axios";
 
   getScore: function(id) {
     return axios.get("/api/scores" + id)
+  },
+
+  getAllUser: function() {
+    return axios.get("/api/getAllUser")
   }
 };

@@ -8,25 +8,33 @@ import CourseNav from "./pages/CourseNav";
 import MainNav from "./pages/MainNav";
 import Chardonnay from "./pages/Chardonnay";
 import Exam from "./pages/Exam";
+<<<<<<< HEAD
 var auth = require('./routes/auth');
 import ExamHome from "./pages/ExamHome"
 import Exam2 from "./pages/Exam2"
+=======
+import Results from "./pages/Results";
+import Register from "./pages/Register";
+import ExamHome from "./pages/ExamHome";
+import Exam2 from "./pages/Exam2";
+>>>>>>> master
 
 const App = () => (
   <Router>
     <div>
       {/* <Nav /> */}
       <Switch>
-        <Route exact path="/" component={Login}/>
+        <Route exact path="/" component={Login} />
         <Route exact path="/exam" component={Exam} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/mainnav" component={MainNav} />
         <Route exact path="/coursenav" component={CourseNav} />
         <Route exact path="/courses" component={Courses} />
         <Route exact path="/chardonnay" component={Chardonnay} />
+        <Route exact path="/results" component={Results} />
+        <Route exact path="/register" component={Register} />
         <Route exact path="/examhome" component={ExamHome} />
         <Route exact path="/examtwo" component={Exam2} />
-
 
         {/* <Route component={NoMatch} /> */}
       </Switch>
