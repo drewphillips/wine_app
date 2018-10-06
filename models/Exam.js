@@ -1,6 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Exam = sequelize.define("exam", {
-        
+    var exam = sequelize.define("exam", {
         uid: 
             DataTypes.STRING,
             allowNull: false,

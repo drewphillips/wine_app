@@ -3,9 +3,9 @@ module.exports = function (sequelize, DataTypes) {
         user:
         DataTypes.STRING,
         allowNull: false,
-        emailaddress: DataTypes.STRING,
-        password: DataTypes.STRING,
-        name: DataTypes.STRING
+        emailaddress:
+        DataTypes.STRING,
+        allowJull: false,
     });
     return user;
 };
