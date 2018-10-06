@@ -1,15 +1,14 @@
 const db = require("../models");
 
-// Defining methods for the booksController
 module.exports = {
     createUser: function(req,res){
-        db.User.create(req.body).then(function(dbUser) {
+        db.user.create(req.body).then(function(dbUser) {
             res.json(dbUser);
           });
     },
 
     findUser: function(req, res) {
-        db.User.findOne({
+        db.user.findOne({
             where: {
                 id: req.params.id
             }
@@ -19,7 +18,7 @@ module.exports = {
       },
 
     findAllUsers: function(req, res) {
-        db.User.findAll({}).then(function(dbUsers){
+        db.user.findAll({}).then(function(dbUsers){
             res.json(dbUsers);
         });
     }

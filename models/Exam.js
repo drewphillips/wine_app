@@ -1,12 +1,11 @@
 module.exports = function (sequelize, DataTypes) {
     var Exam = sequelize.define("exam", {
+        
         uid: 
             DataTypes.STRING,
             allowNull: false,
         
         q1:DataTypes.STRING,
-        // answersForUser [ akj, kj, kj, kj ]
-        // correctAnswer: a
         allowNull: false,
         
         q2: DataTypes.STRING,
