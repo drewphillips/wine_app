@@ -13,13 +13,13 @@ class Exam extends Component {
         <Wrapper>
           <Container>
             <Questions
-              q={"Red Grape Exam Template"}
+              q={"White Grape Exam"}
               q1={"A"}
               q2={"B"}
               q3={"C"}
               q4={"D"}
             />
-          </Container>
+          </Container>                    
         </Wrapper>
       </div>
     );
