@@ -3,22 +3,33 @@ import Questions from "../../components/QuestionBlock/Questions";
 import Wrapper from "../../components/Wrapper";
 import Jumbotron from "../../components/Jumbotron";
 import { Container, Row, Col, Input, Button } from "mdbreact";
+import { RadioGroup, ReversedRadioButton, RadioButton } from "react-radio-buttons";
 import "./exam.css";
 
-class Exam extends Component {
+class Exam extends React.Component {
+
+  handleChange = event => { };
+
   render() {
     return (
       <div>
-        <Jumbotron />
         <Wrapper>
           <Container>
-            <Questions
-              q={"Red Grape Exam Template"}
-              q1={"A"}
-              q2={"B"}
-              q3={"C"}
-              q4={"D"}
-            />
+            <Jumbotron />
+            <RadioGroup onChange={this.onChange} vertical>
+              <RadioButton value="apple" iconSize={20}>
+                <p class="buttonText">Apple</p>
+              </RadioButton>
+              <RadioButton value="orange" iconSize={20}>
+              <p class="buttonText">Orange</p>
+              </RadioButton>
+              <RadioButton value="melon" iconSize={20}>
+              <p class="buttonText">Mango</p>
+              </RadioButton>
+              <RadioButton value="peach" iconSize={20}>
+              <p class="buttonText">Peach</p>
+              </RadioButton>
+            </RadioGroup>
           </Container>
         </Wrapper>
       </div>

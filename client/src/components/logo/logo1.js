@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Animation } from "mdbreact";
-import wineLogo1 from "./Hands-Full-Of-Grapes.png";
+import wineLogo1 from "./wine-7.jpg";
 
 class Logo1 extends Component {
   render() {
