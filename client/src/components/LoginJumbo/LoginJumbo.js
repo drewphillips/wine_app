@@ -5,7 +5,7 @@ import { Navbar, NavbarBrand, Container } from "mdbreact";
 class LoginJumbo extends Component {
   render() {
     return (
-      <Navbar dark fixed-top id="theNav">
+      <Navbar id="theNav">
         <Container>
           <NavbarBrand>
             <h1> Wine'd Up </h1>

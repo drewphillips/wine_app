@@ -5,7 +5,7 @@ import LoginJumbo from "../../components/LoginJumbo";
 import Wrapper from "../../components/Wrapper";
 import { Input, Button } from "mdbreact";
 
-class Login extends Component {
+class Register extends Component {
   render() {
     return (
       <div>
@@ -18,7 +18,7 @@ class Login extends Component {
               <Input
                 label="Your name"
                 icon="user"
-                for="name"
+                htmlFor="name"
                 validate
                 error="wrong"
                 success="right"
@@ -29,7 +29,7 @@ class Login extends Component {
                 icon="envelope"
                 group
                 type="email"
-                for="email"
+                htmlFor="email"
                 validate
                 error="wrong"
                 success="right"
@@ -55,7 +55,12 @@ class Login extends Component {
               />
             </div>
             <div>
-              <Button id="register" type="register" color="elegant">
+              <Button
+                id="register"
+                type="register"
+                color="elegant"
+                onClick={validatePassword}
+              >
                 Register
               </Button>
             </div>
@@ -66,4 +71,21 @@ class Login extends Component {
   }
 }
 
-export default Login;
+function validatePassword() {
+  const password = document.getElementById("password"),
+    confirm_password = document.getElementById("confirm_password");
+
+  console.log(password);
+  console.log(confirm_password);
+
+  if (password.value !== confirm_password.value) {
+    confirm_password.setCustomValidity("The passwords don't match");
+  } else {
+    confirm_password.setCustomValidity("");
+  }
+
+  //   password.onchange = validatePassword;
+  //   confirm_password.onkeyup = validatePassword;
+}
+
+export default Register;
