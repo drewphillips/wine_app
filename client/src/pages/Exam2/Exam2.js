@@ -6,8 +6,22 @@ import { Container, Row, Col, Input, Button } from 'mdbreact';
 import "./Exam2.css";
 
 class Exam2 extends Component {
+
+      componentDidMount() {
+    this.loadExam();
+  }
+
+  loadExam = () => {
+    API.getExam()
+      .then(res => this.setState({ exam: res.data }))
+      .catch(err => console.log(err));
+  };
+
+
+
     render() {
         return (
+            
             <div>
             <Jumbotron />
                 <Wrapper>
