@@ -1,0 +1,1 @@
+export { default } from "./Exam2.js"

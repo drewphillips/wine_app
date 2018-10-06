@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Wrapper from "../../components/Wrapper";
 // import API from "../../utils/API";
-import "./CourseNav.css";
+import "./examhome.css";
 import { Collapse } from "mdbreact";
-import Logo from "../../components/logo";
 
-class CourseNav extends Component {
+class ExamHome extends Component {
   constructor(props) {
     super(props);
     this.toggle1 = this.toggle1.bind(this);
@@ -39,30 +38,22 @@ class CourseNav extends Component {
         <Wrapper>
           <div>
             <div id="coursesNav">
-              <h2>Courses</h2>
+              <h2>Exams</h2>
               <button onClick={this.toggle1} style={{ marginBottom: "1rem" }}>
                 Red Grapes
               </button>
               <Collapse isOpen={this.state.collapse1}>
-                <p className="wines">Cabernet Sauvignon</p>
-                <p className="wines">Merlot</p>
-                <p className="wines">Pinot Noir</p>
-                <p className="wines">Syrah</p>
+                <p className="wines"><a href="/exam">Take The Exam</a></p>
+                <p className="wines">Score:</p>
               </Collapse>
               <br />
               <button onClick={this.toggle2} style={{ marginBottom: "1rem" }}>
                 White grapes{" "}
               </button>
               <Collapse isOpen={this.state.collapse2}>
-                <a href="/chardonnay">
-                  <p className="wines">Chardonnay</p>
-                </a>
-                <p className="wines">Riesling</p>
-                <p className="wines">Sauvignon Blanc</p>
+              <p className="wines"><a href="/exam">Take The Exam</a></p>
+              <p className="wines">Score:</p>
               </Collapse>
-              <div id="Logo">
-                <Logo />
-              </div>
             </div>
           </div>
           ); }
@@ -72,4 +63,4 @@ class CourseNav extends Component {
   }
 }
 
-export default CourseNav;
+export default ExamHome;
