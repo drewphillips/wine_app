@@ -1,9 +1,11 @@
 module.exports = function (sequelize, DataTypes) {
     var user = sequelize.define("user", {
-        name: 
+        user:
         DataTypes.STRING,
         allowNull: false,
-        emailaddress: DataTypes.STRING
+        emailaddress: DataTypes.STRING,
+        password: DataTypes.STRING,
+        name: DataTypes.STRING
     });
     return user;
 };
