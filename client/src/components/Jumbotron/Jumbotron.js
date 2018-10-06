@@ -67,6 +67,9 @@ class Jumbotron extends Component {
                     <DropdownItem id="droppy" href="#">
                       Red grapes
                       <DropdownItem id="droppy" href="#">
+                        Cabernet Sauvignon
+                      </DropdownItem>
+                      <DropdownItem id="droppy" href="#">
                         Merlot
                       </DropdownItem>
                       <DropdownItem id="droppy" href="#">
