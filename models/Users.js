@@ -8,6 +8,7 @@ var generateHash = function (password) {
 
 
 module.exports = function (sequelize, DataTypes) {
+<<<<<<< HEAD
     var User = sequelize.define("User", {
      
         password: {
@@ -22,6 +23,15 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
      
+=======
+    var user = sequelize.define("user", {
+        user:
+        DataTypes.STRING,
+        allowNull: false,
+        emailaddress:
+        DataTypes.STRING,
+        allowJull: false,
+>>>>>>> master
     });
 
     User.associate = function (models) {

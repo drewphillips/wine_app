@@ -1,22 +1,33 @@
 import React, { Component } from "react";
 import "./login.css";
-
 import LoginJumbo from "../../components/LoginJumbo";
 // import API from "../../utils/API";
 import Wrapper from "../../components/Wrapper";
 import { Input, Button } from "mdbreact";
+import API from "../../utils/API.js";
 
 class Login extends Component {
+  state = {
+    // name: "",
+    password: "",
+    emailAddress: ""
+  }
+
+  loginUser = (e) => {
+    e.preventDefault();
+   API.getUser(this.state.emailAddress, this.state.password)
+}
+
   render() {
     return (
       <div>
         <LoginJumbo />
 
         <Wrapper>
-          <form className="LoginForm">
+          <form className="LoginForm" onSubmit={this.loginUser}>
             <h2>Sign in to get started</h2>
             <div className="grey-text">
-              <Input
+              <Input onChange={e => this.setState({ emailAddress: e.target.value })}
                 label="Type your email"
                 icon="envelope"
                 group
@@ -26,7 +37,7 @@ class Login extends Component {
                 success="right"
                 required="required"
               />
-              <Input
+              <Input onChange={e => this.setState({ password: e.target.value })}
                 label="Type your password"
                 icon="lock"
                 group
@@ -36,7 +47,7 @@ class Login extends Component {
               />
             </div>
             <div>
-              <Button id="login" type="login" color="elegant">
+              <Button id="login" type="submit" color="elegant" href="/MainNav">
                 Login
               </Button>
             </div>

@@ -2,6 +2,19 @@ import React from "react";
 import RadioField from "./RadioField";
 import { Button } from "mdbreact";
 
+
+function checkAnswer() {
+  function click(x){
+    x.preventDefault();
+    console.log("yes");
+  }
+  return (
+    <a href="#" onClick={click}>
+      Click me
+    </a>
+  )
+}
+
 const Questions = ({ q, q1, q2, q3, q4 }) => (
   <div>
     <div class="row">
@@ -21,7 +34,7 @@ const Questions = ({ q, q1, q2, q3, q4 }) => (
         <div class="col-lg-12">
           <RadioField question={q4} />
         </div>
-        <Button color="elegant" type="button">
+        <Button color="elegant" type="button" onClick={checkAnswer}>
           Submit
         </Button>
       </div>
