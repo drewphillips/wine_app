@@ -43,6 +43,7 @@ class Jumbotron extends Component {
               <h1> Wine'd Up </h1>
             </a>
           </NavbarBrand>
+
           <HamburgerToggler
             color="elegant"
             id="hamburger1"

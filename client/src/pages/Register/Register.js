@@ -40,6 +40,7 @@ class Login extends Component {
                 icon="lock"
                 group
                 type="password"
+                id="password"
                 validate
                 required="required"
               />
@@ -48,6 +49,7 @@ class Login extends Component {
                 icon="lock"
                 group
                 type="password"
+                id="confirm_password"
                 validate
                 required="required"
               />
