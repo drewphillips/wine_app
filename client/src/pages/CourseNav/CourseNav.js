@@ -45,6 +45,7 @@ class CourseNav extends Component {
               </button>
               <Collapse isOpen={this.state.collapse1}>
                 <p className="wines">Cabernet Sauvignon</p>
+                <p className="wines">Malbec</p>
                 <p className="wines">Merlot</p>
                 <p className="wines">Pinot Noir</p>
                 <p className="wines">Syrah</p>
@@ -60,9 +61,6 @@ class CourseNav extends Component {
                 <p className="wines">Riesling</p>
                 <p className="wines">Sauvignon Blanc</p>
               </Collapse>
-              <div id="Logo">
-                <Logo />
-              </div>
             </div>
           </div>
           ); }

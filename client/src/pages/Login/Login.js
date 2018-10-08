@@ -52,8 +52,15 @@ class Login extends Component {
               </Button>
             </div>
           </form>
+
           <form className="LoginForm">
-            <h2>Or create a new account</h2>
+            <h2>Create a new account</h2>
+
+          <form onSubmit={this.createUser} className="LoginForm">
+
+          <form className="LoginForm">
+
+            <h2>Or create a new account</h2>master
             <Button
               id="create-account"
               href="/register"

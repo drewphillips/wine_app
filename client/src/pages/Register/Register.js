@@ -6,6 +6,9 @@ import Wrapper from "../../components/Wrapper";
 import { Input, Button } from "mdbreact";
 import API from "../../utils/API.js";
 
+
+class Register extends Component {
+
 class Login extends Component {
 
   state = {
@@ -20,6 +23,7 @@ class Login extends Component {
   }
 
 
+
   render() {
     return (
       <div>
@@ -32,7 +36,7 @@ class Login extends Component {
               <Input onChange = {e => this.setState({name: e.target.value})}
                 label="Your name"
                 icon="user"
-                for="name"
+                htmlFor="name"
                 validate
                 error="wrong"
                 success="right"
@@ -43,7 +47,7 @@ class Login extends Component {
                 icon="envelope"
                 group
                 type="email"
-                for="email"
+                htmlFor="email"
                 validate
                 error="wrong"
                 success="right"
@@ -54,6 +58,7 @@ class Login extends Component {
                 icon="lock"
                 group
                 type="password"
+                id="password"
                 validate
                 required="required"
               />
@@ -62,12 +67,22 @@ class Login extends Component {
                 icon="lock"
                 group
                 type="password"
+                id="confirm_password"
                 validate
                 required="required"
               />
             </div>
             <div>
+
+              <Button
+                id="register"
+                type="register"
+                color="elegant"
+                onClick={validatePassword}
+              >
+
               <Button id="register" type="submit" color="elegant" href="/MainNav">
+
                 Register
               </Button>
             </div>
@@ -78,4 +93,21 @@ class Login extends Component {
   }
 }
 
-export default Login;
+function validatePassword() {
+  const password = document.getElementById("password"),
+    confirm_password = document.getElementById("confirm_password");
+
+  console.log(password);
+  console.log(confirm_password);
+
+  if (password.value !== confirm_password.value) {
+    confirm_password.setCustomValidity("The passwords don't match");
+  } else {
+    confirm_password.setCustomValidity("");
+  }
+
+  //   password.onchange = validatePassword;
+  //   confirm_password.onkeyup = validatePassword;
+}
+
+export default Register;
