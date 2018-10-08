@@ -1,1 +1,1 @@
-//export { default } from "./Exam2.js"
+export { default } from "./Exam2.js"
