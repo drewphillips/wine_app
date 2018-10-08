@@ -58,7 +58,7 @@ class Login extends Component {
 
           <form onSubmit={this.createUser} className="LoginForm">
 
-          <form className="LoginForm">
+          {/* <form className="LoginForm"> */}
 
             <h2>Or create a new account</h2>master
             <Button
@@ -69,8 +69,10 @@ class Login extends Component {
             >
               Create account
             </Button>
+          
           </form>
-        </Wrapper>
+
+       </form> </Wrapper>
       </div>
     );
   }
