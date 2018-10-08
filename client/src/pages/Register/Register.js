@@ -4,18 +4,36 @@ import LoginJumbo from "../../components/LoginJumbo";
 // import API from "../../utils/API";
 import Wrapper from "../../components/Wrapper";
 import { Input, Button } from "mdbreact";
+import API from "../../utils/API.js";
+
 
 class Register extends Component {
+
+class Login extends Component {
+
+  state = {
+    name:"",
+    password: "",
+    emailAddress:""
+  }
+
+  createUser = (e) => {
+    e.preventDefault(); 
+    API.createUser(this.state.emailAddress, this.state.password)
+  }
+
+
+
   render() {
     return (
       <div>
         <LoginJumbo />
 
         <Wrapper>
-          <form className="LoginForm">
+          <form onSubmit={this.createUser} className="LoginForm">
             <h2>Create a new account</h2>
             <div>
-              <Input
+              <Input onChange = {e => this.setState({name: e.target.value})}
                 label="Your name"
                 icon="user"
                 htmlFor="name"
@@ -24,7 +42,7 @@ class Register extends Component {
                 success="right"
                 required="required"
               />
-              <Input
+              <Input onChange = {e => this.setState({emailAddress:e.target.value})}
                 label="Your email address"
                 icon="envelope"
                 group
@@ -35,7 +53,7 @@ class Register extends Component {
                 success="right"
                 required="required"
               />
-              <Input
+              <Input 
                 label="Your password"
                 icon="lock"
                 group
@@ -44,7 +62,7 @@ class Register extends Component {
                 validate
                 required="required"
               />
-              <Input
+              <Input onChange = {e => this.setState({password: e.target.value})}
                 label="Re-type your password"
                 icon="lock"
                 group
@@ -55,12 +73,16 @@ class Register extends Component {
               />
             </div>
             <div>
+
               <Button
                 id="register"
                 type="register"
                 color="elegant"
                 onClick={validatePassword}
               >
+
+              <Button id="register" type="submit" color="elegant" href="/MainNav">
+
                 Register
               </Button>
             </div>

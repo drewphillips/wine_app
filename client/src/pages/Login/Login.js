@@ -13,11 +13,6 @@ class Login extends Component {
     emailAddress: ""
   }
 
-  createUser = (e) => {
-    e.preventDefault();
-    API.createUser(this.state.emailAddress, this.state.password)
-  }
-
   loginUser = (e) => {
     e.preventDefault();
    API.getUser(this.state.emailAddress, this.state.password)
@@ -52,18 +47,20 @@ class Login extends Component {
               />
             </div>
             <div>
-              <Button id="login" type="submit" color="elegant">
+              <Button id="login" type="submit" color="elegant" href="/MainNav">
                 Login
               </Button>
             </div>
           </form>
-<<<<<<< HEAD
+
           <form className="LoginForm">
             <h2>Create a new account</h2>
-=======
+
           <form onSubmit={this.createUser} className="LoginForm">
-            <h2>Or create a new account</h2>
->>>>>>> master
+
+          <form className="LoginForm">
+
+            <h2>Or create a new account</h2>master
             <Button
               id="create-account"
               href="/register"
