@@ -2,7 +2,11 @@
     background-color: white;
 }
 
-h3{
+.buttonText {
+    color: white;
+    font-size: 24px;
+}
+h3 {
     background-color: maroon;
     color: white;
     margin-top:25px;
