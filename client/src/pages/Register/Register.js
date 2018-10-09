@@ -78,7 +78,4 @@ class Register extends Component {
  }
 }
 
-
-
 export default Register;
-
