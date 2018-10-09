@@ -78,8 +78,7 @@ class Register extends Component {
  }
 }
 
-<<<<<<< HEAD
+
+
 export default Register;
-=======
-export default Register;
->>>>>>> master
+
