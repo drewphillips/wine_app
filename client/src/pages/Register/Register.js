@@ -6,7 +6,7 @@ import Wrapper from "../../components/Wrapper";
 import { Input, Button } from "mdbreact";
 import API from "../../utils/API.js";
 
-class Login extends Component {
+class Register extends Component {
 
   state = {
     name:"",
@@ -78,4 +78,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Register;
