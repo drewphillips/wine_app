@@ -22,9 +22,9 @@ class Login extends Component {
     return (
       <div>
         <LoginJumbo />
-
+{/* // {this.loginUser} */}
         <Wrapper>
-          <form className="LoginForm" onSubmit={this.loginUser}>
+          <form className="LoginForm" onSubmit={console.log(this.state)}>
             <h2>Sign in to get started</h2>
             <div className="grey-text">
               <Input onChange={e => this.setState({ emailAddress: e.target.value })}
