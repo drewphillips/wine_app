@@ -1,10 +1,11 @@
 const db = require("../models");
 
 module.exports = {
-    createUser: function(req,res){
-        db.user.create(req.body).then(function(dbUser) {
-            res.json(dbUser);
-          });
+
+    findAllUsers: function(req, res) {
+        db.user.findAll({}).then(function(dbUsers){
+            res.json(dbUsers);
+        });
     },
 
     findUser: function(req, res) {
@@ -17,10 +18,10 @@ module.exports = {
         });
       },
 
-    findAllUsers: function(req, res) {
-        db.user.findAll({}).then(function(dbUsers){
-            res.json(dbUsers);
-        });
-    }
+    createUser: function(req,res){
+        db.user.create(req.body).then(function(dbUser) {
+            res.json(dbUser);
+          });
+    },
 
-}
+};
