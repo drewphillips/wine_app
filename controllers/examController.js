@@ -3,11 +3,9 @@ const db = require("../models");
 
 module.exports = {
   findExam:  function(req,res) {
-    db.exam.findAll({}).then(function(iAmTheExam){
+    db.exam.findAll({}).then(function(cb){
 
-      console.log("gotem",iAmTheExam);
-
-      res.json({user:"I am the user"});
+      res.json(cb);
 
 
     });

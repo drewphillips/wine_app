@@ -44,13 +44,13 @@ module.exports = function (sequelize, DataTypes) {
 
     });
 
-    // exam.associate = function(models) {
-    //     exam.belongsTo(models.user, {
-    //         foreignKey: {
-    //             allowNull: false
-    //         }
-    //     });
-    // };
+    exam.associate = function(models) {
+        exam.belongsTo(models.user, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
     
     return exam;
 };
