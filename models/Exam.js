@@ -1,9 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
     var exam = sequelize.define("exam", {
-        uid: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         q1: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -48,13 +44,13 @@ module.exports = function (sequelize, DataTypes) {
 
     });
 
-    exam.associate = function(models) {
-        exam.belongsTo(models.user, {
-            foreignKey: {
-                allowNull: false
-            }
-        });
-    };
+    // exam.associate = function(models) {
+    //     exam.belongsTo(models.user, {
+    //         foreignKey: {
+    //             allowNull: false
+    //         }
+    //     });
+    // };
     
     return exam;
 };

@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const userController = require("../controllers/userController")
+const userController = require("../../controllers/userController")
 
 // Get all Users in json format
 router.get("/allusers", userController.findAllUsers);
