@@ -11,12 +11,17 @@ class Login extends Component {
     // name: "",
     password: "",
     emailAddress: ""
-  }
+  };
 
-  loginUser = (e) => {
+  createUser = e => {
     e.preventDefault();
-   API.getUser(this.state.emailAddress, this.state.password)
-}
+    API.createUser(this.state.emailAddress, this.state.password);
+  };
+
+  loginUser = e => {
+    e.preventDefault();
+    API.getUser(this.state.emailAddress, this.state.password);
+  };
 
   render() {
     return (
@@ -27,7 +32,8 @@ class Login extends Component {
           <form className="LoginForm" onSubmit={this.loginUser}>
             <h2>Sign in to get started</h2>
             <div className="grey-text">
-              <Input onChange={e => this.setState({ emailAddress: e.target.value })}
+              <Input
+                onChange={e => this.setState({ emailAddress: e.target.value })}
                 label="Type your email"
                 icon="envelope"
                 group
@@ -37,7 +43,8 @@ class Login extends Component {
                 success="right"
                 required="required"
               />
-              <Input onChange={e => this.setState({ password: e.target.value })}
+              <Input
+                onChange={e => this.setState({ password: e.target.value })}
                 label="Type your password"
                 icon="lock"
                 group
@@ -47,20 +54,13 @@ class Login extends Component {
               />
             </div>
             <div>
-              <Button id="login" type="submit" color="elegant" href="/MainNav">
+              <Button id="login" type="submit" color="elegant">
                 Login
               </Button>
             </div>
           </form>
-
           <form className="LoginForm">
             <h2>Create a new account</h2>
-
-          <form onSubmit={this.createUser} className="LoginForm">
-
-          <form className="LoginForm">
-
-            <h2>Or create a new account</h2>master
             <Button
               id="create-account"
               href="/register"
