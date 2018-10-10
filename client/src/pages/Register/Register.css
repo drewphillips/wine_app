@@ -11,3 +11,8 @@
   padding: 1rem;
   font-family: "Roboto", sans-serif;
 }
+
+a#register {
+  width: 100%;
+  background: #2e2e2e;
+}
