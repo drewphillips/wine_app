@@ -4,7 +4,7 @@ import Wrapper from "../../components/Wrapper";
 import Jumbotron from "../../components/Jumbotron"
 import { Container, Row, Col, Input, Button } from 'mdbreact';
 import { RadioGroup, ReversedRadioButton, RadioButton } from "react-radio-buttons";
-import "../Exam/exam.css";
+import "../Exam/Exam.css";
 
 class Exam2 extends React.Component {
 

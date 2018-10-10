@@ -12,7 +12,7 @@ import axios from "axios";
   createUser: function(emailAddress, password){
     return axios.post("/api/user/createUser",{emailAddress,password})
   },
-  
+
   // postScore: function(id){
   //   return axios.post("/api/scores" + id)
   // },
