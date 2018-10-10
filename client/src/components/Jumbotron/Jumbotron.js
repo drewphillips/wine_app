@@ -43,6 +43,7 @@ class Jumbotron extends Component {
               <h1> Wine'd Up </h1>
             </a>
           </NavbarBrand>
+
           <HamburgerToggler
             color="elegant"
             id="hamburger1"
@@ -65,6 +66,9 @@ class Jumbotron extends Component {
                   <DropdownMenu>
                     <DropdownItem id="droppy" href="#">
                       Red grapes
+                      <DropdownItem id="droppy" href="#">
+                        Cabernet Sauvignon
+                      </DropdownItem>
                       <DropdownItem id="droppy" href="#">
                         Merlot
                       </DropdownItem>

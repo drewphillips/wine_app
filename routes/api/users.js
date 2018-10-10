@@ -7,7 +7,11 @@ router.get("/allusers", userController.findAllUsers);
 router.get("/findUser/:id", userController.findUser);
 // Create a new user
 router.post("/createUser", userController.createUser);
+<<<<<<< HEAD:routes/api/users.js
 
 
+=======
+router.get("/allusers", userController.findAllUsers);
+>>>>>>> master:routes/userRoute.js
 
 module.exports = router;

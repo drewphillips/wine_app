@@ -11,28 +11,29 @@ class Login extends Component {
     // name: "",
     password: "",
     emailAddress: ""
-  }
+  };
 
-  createUser = (e) => {
+  createUser = e => {
     e.preventDefault();
-    API.createUser(this.state.emailAddress, this.state.password)
-  }
+    API.createUser(this.state.emailAddress, this.state.password);
+  };
 
-  loginUser = (e) => {
+  loginUser = e => {
     e.preventDefault();
-   API.getUser(this.state.emailAddress, this.state.password)
-}
+    API.getUser(this.state.emailAddress, this.state.password);
+  };
 
   render() {
     return (
       <div>
         <LoginJumbo />
-
+        {/* // {this.loginUser} */}
         <Wrapper>
-          <form className="LoginForm" onSubmit={this.loginUser}>
+          <form className="LoginForm" onSubmit={console.log(this.state)}>
             <h2>Sign in to get started</h2>
             <div className="grey-text">
-              <Input onChange={e => this.setState({ emailAddress: e.target.value })}
+              <Input
+                onChange={e => this.setState({ emailAddress: e.target.value })}
                 label="Type your email"
                 icon="envelope"
                 group
@@ -42,7 +43,8 @@ class Login extends Component {
                 success="right"
                 required="required"
               />
-              <Input onChange={e => this.setState({ password: e.target.value })}
+              <Input
+                onChange={e => this.setState({ password: e.target.value })}
                 label="Type your password"
                 icon="lock"
                 group
@@ -57,17 +59,21 @@ class Login extends Component {
               </Button>
             </div>
           </form>
-          <form onSubmit={this.createUser} className="LoginForm">
-            <h2>Or create a new account</h2>
-            <Button
-              id="create-account"
-              href="/register"
-              type="create-account"
-              color="elegant"
-            >
-              Create account
-            </Button>
-          </form>
+          <form className="LoginForm">
+            <h2>Create a new account</h2>
+
+            <form onSubmit={this.createUser}>
+              {/* <form className="LoginForm"> */}
+              <Button
+                id="create-account"
+                href="/register"
+                type="create-account"
+                color="elegant"
+              >
+                Create account
+              </Button>
+            </form>
+          </form>{" "}
         </Wrapper>
       </div>
     );
