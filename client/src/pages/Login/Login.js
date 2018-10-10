@@ -27,7 +27,7 @@ class Login extends Component {
     return (
       <div>
         <LoginJumbo />
-{/* // {this.loginUser} */}
+        {/* // {this.loginUser} */}
         <Wrapper>
           <form className="LoginForm" onSubmit={console.log(this.state)}>
             <h2>Sign in to get started</h2>
@@ -61,27 +61,22 @@ class Login extends Component {
           </form>
           <form className="LoginForm">
             <h2>Create a new account</h2>
-<<<<<<< HEAD
-=======
 
-          <form onSubmit={this.createUser} className="LoginForm">
-
-          {/* <form className="LoginForm"> */}
-
-            <h2>Or create a new account</h2>master
->>>>>>> master
-            <Button
-              id="create-account"
-              href="/register"
-              type="create-account"
-              color="elegant"
-            >
-              Create account
-            </Button>
-          
-          </form>
-
-       </form> </Wrapper>
+            <form onSubmit={this.createUser} className="LoginForm">
+              {/* <form className="LoginForm"> */}
+              <h2>Or create a new account</h2>
+              master
+              <Button
+                id="create-account"
+                href="/register"
+                type="create-account"
+                color="elegant"
+              >
+                Create account
+              </Button>
+            </form>
+          </form>{" "}
+        </Wrapper>
       </div>
     );
   }
