@@ -1,0 +1,56 @@
+p {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+.burgundy{
+    height: 350px;
+    width: 350px;
+    margin-left: 250px;
+}
+
+.chardonnay12{
+    height: 400px;
+    width: 450px;
+    margin-left: 250px;
+}
+
+.chablis {
+    margin-left: 270px;
+}
+
+.chardonnays {
+    margin-left: 150px;
+}
+
+.taittinger {
+    height: 500px;
+    width: 800px;
+    margin-left: 25px;
+}
+
+
+.winegrapes {
+    height: 700px;
+    width: 1200px;
+}
+
+.h1-responsive {
+    font-family: "Roboto", sans-serif;
+    font-size: 75px;
+    margin-bottom: 200px;
+}
+
+
+.a-responsive {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.chardonnay1 {
+    max-width: 100vw
+}

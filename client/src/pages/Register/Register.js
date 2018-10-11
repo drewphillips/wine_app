@@ -103,7 +103,7 @@ class Register extends Component {
 function validatePassword() {
   const password = document.getElementById("password"),
     confirm_password = document.getElementById("confirm_password");
-
+  const url = "/mainnav";
   console.log(password);
   console.log(confirm_password);
 
@@ -111,9 +111,8 @@ function validatePassword() {
     confirm_password.setCustomValidity("The passwords don't match");
   } else {
     confirm_password.setCustomValidity("");
+    window.open(url, "_top");
   }
-  //   password.onchange = validatePassword;
-  //   confirm_password.onkeyup = validatePassword;
 }
 
 export default Register;

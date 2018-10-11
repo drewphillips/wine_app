@@ -1,11 +1,10 @@
 .navbar {
   background-image: url("../../assets/images/winegrapes-shutterstock.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
+  background-size: 100vw;
+  color: maroon;
   padding-top: 1.5rem;
   margin: 0;
+  width: 100%;
 }
 
 .navbar h1 {
@@ -45,7 +44,7 @@ li#theLink {
   font-family: "Roboto", sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px)  {
   .navbar {
     background-color: white;
     padding-top: 0.4rem;
