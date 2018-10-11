@@ -29,7 +29,7 @@ New Tech used, Slick and Passport.
 
 Ali: UX, Wine courses.
 
-Dean: Authentication.
+Drew: Authentication, Server deployment. 
 
 Ivan: Database
 
