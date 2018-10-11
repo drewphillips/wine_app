@@ -8,14 +8,19 @@ import API from "../../utils/API.js";
 
 class Register extends Component {
   state = {
+    name: "",
     password: "",
     emailAddress: ""
   };
 
   createUser = e => {
     e.preventDefault();
-    API.createUser(this.state.emailAddress, this.state.password);
+    API.createUser(this.state.emailAddress, this.state.password, this.state.name);
+
     console.log(this.state.emailAddress);
+    console.log(this.state.password);
+    console.log(this.state.name);
+
   };
 
   render() {
@@ -24,7 +29,21 @@ class Register extends Component {
         <LoginJumbo />
 
         <Wrapper>
-          <form onSubmit={this.createUser} className="LoginForm">
+
+
+          <form
+            onSubmit={(this.createUser)}
+
+            //  onSubmit= {console.log
+            //   (this.state)}
+
+            //   onSubmit = {console.log(this.state.name)} 
+
+            /*onSubmit=(this.state.emailAddress) */
+
+            className="LoginForm">
+
+
             <h2>Create a new account</h2>
             <div>
               <Input
@@ -82,16 +101,22 @@ class Register extends Component {
               />
             </div>
             <div>
-              <a href="/mainnav">
-                <Button
-                  id="register"
-                  type="submit"
-                  color="elegant"
-                  onClick={validatePassword}
-                >
-                  Register
+         
+              <Button
+                id="register"
+                type="submit"
+                color="elegant"
+              // onClick={console.log(this.state.name)}
+             
+            // onClick = {console.log(this.state.password)} 
+             
+            // onClick = {console.log(this.state.emailAddress)}
+            
+            onClick = {validatePassword}
+              >
+                Register
                 </Button>
-              </a>
+             
             </div>
           </form>
         </Wrapper>

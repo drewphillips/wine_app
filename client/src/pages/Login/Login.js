@@ -13,11 +13,6 @@ class Login extends Component {
     emailAddress: ""
   };
 
-  createUser = e => {
-    e.preventDefault();
-    API.createUser(this.state.emailAddress, this.state.password);
-  };
-
   loginUser = e => {
     e.preventDefault();
     API.getUser(this.state.emailAddress, this.state.password);
@@ -27,9 +22,9 @@ class Login extends Component {
     return (
       <div>
         <LoginJumbo />
-        {/* // {this.loginUser} */}
+        {/* // {console.log(this.state)} */}
         <Wrapper>
-          <form className="LoginForm" onSubmit={console.log(this.state)}>
+          <form className="LoginForm" onSubmit={this.loginUser}>
             <h2>Sign in to get started</h2>
             <div className="grey-text">
               <Input
