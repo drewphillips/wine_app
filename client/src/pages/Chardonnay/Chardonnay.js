@@ -222,9 +222,9 @@ class Chardonnay extends Component {
               </View>
               <CarouselCaption>
                 <h1 className="h1-responsive">Congratulations on Completing Our Chardonnay Course!</h1>
-                <a className="a-responsive">Review Flash Cards | </a>
+                <a className="a-responsive" href="/coursenav">Choose Another Course | </a>
                 <a className="a-responsive" href="/exam">Take Exam | </a>
-                <a className="a-responsive" href="/chardonnay">Retake Course</a>
+                <a className="a-responsive" href="/chardonnay">Restart Course</a>
 
               </CarouselCaption>
             </CarouselItem>
@@ -237,6 +237,7 @@ class Chardonnay extends Component {
 }
 
 export default Chardonnay;
+
 
 
 

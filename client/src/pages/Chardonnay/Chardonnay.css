@@ -10,12 +10,14 @@ h3 {
     height: 350px;
     width: 350px;
     margin-left: 250px;
+    max-width: 100vw
 }
 
 .chardonnay12{
     height: 400px;
     width: 450px;
     margin-left: 250px;
+    max-width: 100vw
 }
 
 .chablis {
@@ -24,6 +26,7 @@ h3 {
 
 .chardonnays {
     margin-left: 150px;
+    max-width: 100vw
 }
 
 .taittinger {
@@ -47,10 +50,81 @@ h3 {
 
 .a-responsive {
     font-family: "Roboto", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 
 .chardonnay1 {
+    max-width: 100vw
+}
+.chardonnay2 {
+    max-width: 100vw
+}
+
+.chardonnay3 {
+    max-width: 100vw
+}
+
+.chardonnay4 {
+    max-width: 100vw
+}
+
+.chardonnay5 {
+    max-width: 100vw
+}
+
+.chardonnay6 {
+    max-width: 100vw
+}
+
+.chardonnay7 {
+    max-width: 100vw
+}
+
+.chardonnay8{
+    max-width: 100vw
+}
+
+.chardonnay9 {
+    max-width: 100vw
+}
+
+.chardonnay10 {
+    max-width: 100vw
+}
+
+.coolclimate {
+    max-width: 100vw
+}
+
+.mersault {
+    max-width: 100vw
+}
+
+.champagne {
+    max-width: 100vw
+}
+
+.taittinger {
+    max-width: 100vw
+}
+
+.chablis {
+    max-width: 100vw
+}
+
+.malo {
+    max-width: 100vw
+}
+
+.mersault {
+    max-width: 100vw
+}
+
+.burgundy {
+    max-width: 100vw
+}
+
+.blancdeblancs {
     max-width: 100vw
 }

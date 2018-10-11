@@ -142,7 +142,7 @@ render() {
                         state = {"inputValue9"}
                         answerChange={this.answerChange}
                     />
-              <Button color="elegant" type="Submit" onClick={(e) => console.log(this.state)}>
+              <Button color="elegant" type="Submit" href="/results" onClick={(e) =>  console.log(this.state)}>
                             Submit
                 </Button>        
                 </Container>
