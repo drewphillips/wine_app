@@ -54,30 +54,25 @@ class Login extends Component {
               />
             </div>
             <div>
-              <Button id="login" type="submit" color="elegant">
+              <Button id="login" type="submit" color="elegant" onClick={login}>
                 Login
               </Button>
             </div>
-          </form>
-          <form className="LoginForm">
-            <h2>Create a new account</h2>
 
-            <form onSubmit={this.createUser}>
-              {/* <form className="LoginForm"> */}
-              <Button
-                id="create-account"
-                href="/register"
-                type="create-account"
-                color="elegant"
-              >
-                Create account
-              </Button>
-            </form>
-          </form>{" "}
+            <a id="create-account" href="/register">
+              &nbsp;Not a user? Click here to create an account
+            </a>
+          </form>
         </Wrapper>
       </div>
     );
   }
+}
+
+function login() {
+  const url = "/mainnav";
+
+  window.open(url, "_top");
 }
 
 export default Login;
