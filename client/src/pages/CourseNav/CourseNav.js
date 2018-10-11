@@ -104,20 +104,7 @@ class CourseNav extends Component {
 
                 </Collapse>
                 
-                <Collapse isOpen={this.state.collapse1}>
-              <button onClick={this.toggle1} style={{ marginBottom: "1rem" }}>
-                Germany
-              </button>
-                <p className="wines">Malbec</p>
-                <p className="wines">Mouvedre/Monastrell/Mataro</p>
-                <p className="wines">Merlot</p>
-                <p className="wines">Nebbiolo</p>
-                <p className="wines">Pinot Noir</p>
-                <p className="wines">Sangiovese</p>
-                <p className="wines">Syrah/Shiraz</p>
-                <p className="wines">Tempranillo</p>
-              </Collapse>
-              
+        
               <div id="Logo">
                 <Logo />
               </div>
