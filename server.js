@@ -4,9 +4,15 @@ const examRoutes = require("./routes/api/exams");
 const userRoutes = require("./routes/api/users")
 const PORT = process.env.PORT || 3001;
 const app = express();
+const bodyParser = require("body-parser");
 
 // bring in the models
 var db = require("./models");
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+// parse application/json
+app.use(bodyParser.json());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
