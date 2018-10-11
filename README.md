@@ -12,7 +12,7 @@ External Links:
 
 Github Project: https://github.com/drewphillips/wine_app/projects/1
 
-Heroku: https://mysterious-anchorage-20918.herokuapp.com/login
+Heroku: http://wine-not-wined-up.herokuapp.com/
 
 Test account info:
 User: Wineapp@mailinator.com,
