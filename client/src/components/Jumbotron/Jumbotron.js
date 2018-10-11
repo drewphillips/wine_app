@@ -57,23 +57,9 @@ class Jumbotron extends Component {
               </NavItem>
               <NavItem>
                 <Dropdown id="theLink">
-                  <NavLink to="/coursenav">
-                    <DropdownToggle nav caret>
-                      Courses
-                    </DropdownToggle>
+                  <NavLink to="/coursenav">Courses
+                    
                   </NavLink>
-                  <DropdownMenu>
-                    <DropdownItem id="droppy" href="#">
-                      Red grapes
-                     
-                    <DropdownItem id="droppy" href="#">
-                    White grapes
-                      </DropdownItem>
-                      <DropdownItem id="droppy" href="#">
-                    Regions
-                      </DropdownItem>
-                    </DropdownItem>
-                  </DropdownMenu>
                 </Dropdown>
               </NavItem>
               <NavItem id="theLink">

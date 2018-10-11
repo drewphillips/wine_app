@@ -12,6 +12,8 @@ import Login from "./pages/Login";
 import MainNav from "./pages/MainNav";
 import Results from "./pages/Results";
 import Register from "./pages/Register";
+import WineTasting from "./pages/WineTasting";
+
 
 const App = () => (
   <Router>
@@ -29,6 +31,8 @@ const App = () => (
         <Route exact path="/register" component={Register} />
         <Route exact path="/examhome" component={ExamHome} />
         <Route exact path="/examtwo" component={Exam2} />
+        <Route exact path="/winetasting" component={WineTasting} />
+
 
         {/* <Route component={NoMatch} /> */}
       </Switch>

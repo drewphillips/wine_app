@@ -12,6 +12,8 @@ class CourseNav extends Component {
     this.toggle1 = this.toggle1.bind(this);
     this.toggle2 = this.toggle2.bind(this);
     this.toggle3 = this.toggle3.bind(this);
+    this.toggle4 = this.toggle4.bind(this);
+
 
 
 
@@ -20,7 +22,9 @@ class CourseNav extends Component {
     this.state = {
       collapse1: false,
       collapse2: false,
-      collapse3: false
+      collapse3: false,
+      collapse4: false
+
 
 
     };
@@ -43,6 +47,10 @@ class CourseNav extends Component {
     this.setState({ collapse3: !this.state.collapse3 });
   }
 
+  toggle4() {
+    this.setState({ collapse4: !this.state.collapse4 });
+  }
+
   render() {
     return (
       <div>
@@ -51,11 +59,26 @@ class CourseNav extends Component {
         <Wrapper>
           <div>
             <div id="coursesNav">
+            
               <h2>Courses</h2>
-              <button onClick={this.toggle1} style={{ marginBottom: "1rem" }}>
-                Red Grapes
+
+            <button onClick={this.toggle1} style={{ marginBottom: "1rem" }}>
+               Overviews
               </button>
               <Collapse isOpen={this.state.collapse1}>
+              <a href="/winetasting"> 
+              <p className="wines">Introduction to Wine Tasting</p>
+              </a>
+              <p className= "wines">Introduction to Wine Production</p>
+               <p className="wines">Introduction to Wine Service </p>
+              </Collapse>
+              <br />
+
+
+              <button onClick={this.toggle2} style={{ marginBottom: "1rem" }}>
+                Red Grapes
+              </button>
+              <Collapse isOpen={this.state.collapse2}>
               <p className="wines">Barbera</p>
                 <p className="wines">Cabernet Sauvignon</p>
                 <p className="wines">Grenache</p>
@@ -69,10 +92,10 @@ class CourseNav extends Component {
                 <p className="wines">Tempranillo</p>
               </Collapse>
               <br />
-              <button onClick={this.toggle2} style={{ marginBottom: "1rem" }}>
+              <button onClick={this.toggle3} style={{ marginBottom: "1rem" }}>
                 White Grapes{" "}
               </button>
-              <Collapse isOpen={this.state.collapse2}>
+              <Collapse isOpen={this.state.collapse3}>
                 <a href="/chardonnay">
                 <p className="wines">Albariño</p>  
                 <p className="wines">Cava Grapes</p>             
@@ -89,15 +112,16 @@ class CourseNav extends Component {
 
               </Collapse>
 
-                <button onClick={this.toggle3} style={{ marginBottom: "1rem" }}>
+                <button onClick={this.toggle4} style={{ marginBottom: "1rem" }}>
                 Regions
               </button>
-              <Collapse isOpen={this.state.collapse3}>
+              <Collapse isOpen={this.state.collapse4}>
                 <p className="wines">France</p>
                 <p className="wines">Germany</p>
                 <p className="wines">Italy</p>
                 <p className="wines">California</p>
                 <p className="wines">Australia</p>
+                <p className="wines">South America</p>
                 <p className="wines">South Africa</p>
 
 

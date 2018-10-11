@@ -7,3 +7,19 @@
   font-size: 1.3rem;
   width: 90%;
 }
+
+#whitebg {
+  background: white;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  width: 90%;
+}
+
+.link{
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}

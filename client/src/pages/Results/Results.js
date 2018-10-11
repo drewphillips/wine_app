@@ -15,8 +15,15 @@ class Results extends Component {
         <Wrapper>
           <main id="whitebg">
             <h2>Results</h2>
-            <p>You got X right.</p>
+            <br></br>
+            <p>You got 100% of the answers right.</p>
+            <br></br>
+            <a className="link" href="/examhome">Take Another Exam | </a>
+            <a className="link" href="/coursenav">Return to Courses</a>
+
+
           </main>
+          
         </Wrapper>
       </div>
     );
