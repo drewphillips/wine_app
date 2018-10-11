@@ -4,32 +4,54 @@ import LoginJumbo from "../../components/LoginJumbo";
 // import API from "../../utils/API";
 import Wrapper from "../../components/Wrapper";
 import { Input, Button } from "mdbreact";
+import API from "../../utils/API.js";
 
-class Login extends Component {
+class Register extends Component {
+  state = {
+    password: "",
+    emailAddress: ""
+  };
+
+  createUser = e => {
+    e.preventDefault();
+    API.createUser(this.state.emailAddress, this.state.password);
+    console.log(this.state.emailAddress);
+  };
+
   render() {
     return (
       <div>
         <LoginJumbo />
 
         <Wrapper>
-          <form className="LoginForm">
+          <form onSubmit={this.createUser} className="LoginForm">
             <h2>Create a new account</h2>
             <div>
               <Input
+                onChange={e =>
+                  this.setState({
+                    name: e.target.value
+                  })
+                }
                 label="Your name"
                 icon="user"
-                for="name"
+                htmlFor="name"
                 validate
                 error="wrong"
                 success="right"
                 required="required"
               />
               <Input
+                onChange={e =>
+                  this.setState({
+                    emailAddress: e.target.value
+                  })
+                }
                 label="Your email address"
                 icon="envelope"
                 group
                 type="email"
-                for="email"
+                htmlFor="email"
                 validate
                 error="wrong"
                 success="right"
@@ -40,22 +62,36 @@ class Login extends Component {
                 icon="lock"
                 group
                 type="password"
+                id="password"
                 validate
                 required="required"
               />
               <Input
+                onChange={e =>
+                  this.setState({
+                    password: e.target.value
+                  })
+                }
                 label="Re-type your password"
                 icon="lock"
                 group
                 type="password"
+                id="confirm_password"
                 validate
                 required="required"
               />
             </div>
             <div>
-              <Button id="register" type="register" color="elegant">
-                Register
-              </Button>
+              <a href="/mainnav">
+                <Button
+                  id="register"
+                  type="submit"
+                  color="elegant"
+                  onClick={validatePassword}
+                >
+                  Register
+                </Button>
+              </a>
             </div>
           </form>
         </Wrapper>
@@ -64,4 +100,20 @@ class Login extends Component {
   }
 }
 
-export default Login;
+function validatePassword() {
+  const password = document.getElementById("password"),
+    confirm_password = document.getElementById("confirm_password");
+
+  console.log(password);
+  console.log(confirm_password);
+
+  if (password.value !== confirm_password.value) {
+    confirm_password.setCustomValidity("The passwords don't match");
+  } else {
+    confirm_password.setCustomValidity("");
+  }
+  //   password.onchange = validatePassword;
+  //   confirm_password.onkeyup = validatePassword;
+}
+
+export default Register;

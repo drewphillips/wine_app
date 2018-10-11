@@ -26,7 +26,7 @@ class MainNav extends Component {
             <a href="/coursenav">
               <Button color="elegant">Courses</Button>
             </a>
-            <a href="/exam">
+            <a href="/examhome">
               <Button color="elegant">Exams</Button>
             </a>
             <div id="Logo">

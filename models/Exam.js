@@ -1,42 +1,56 @@
 module.exports = function (sequelize, DataTypes) {
-    var Exam = sequelize.define("exam", {
-        uid: 
-            DataTypes.STRING,
+    var exam = sequelize.define("exam", {
+        q1: {
+            type: DataTypes.STRING,
             allowNull: false,
+        },
         
-        q1:DataTypes.STRING,
-        // answersForUser [ akj, kj, kj, kj ]
-        // correctAnswer: a
-        allowNull: false,
-        
-        q2: DataTypes.STRING,
-        allowNull: false,
-           
-        q3: DataTypes.STRING,
-        allowNull: false,
-               
-        q4: DataTypes.STRING,
-        allowNull: false,
-        
-        q5: DataTypes.STRING,
-        allowNull: false,
-    
-        q6:  DataTypes.STRING,
-        allowNull: false,
-            
-        q7: DataTypes.STRING,
-        allowNull: false,
-             
-        q8: DataTypes.STRING,
-        allowNull: false,
-             
-        q9: DataTypes.STRING,
-        allowNull: false,
-            
-        q10:  DataTypes.STRING,
-        allowNull: false
-            
-        
+        q2: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        q3: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        q4: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        q5: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        q6: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        q7: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        q8: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        q9: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        q10: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        }       
+
     });
+
+    exam.associate = function(models) {
+        exam.belongsTo(models.user, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
+    
     return exam;
 };

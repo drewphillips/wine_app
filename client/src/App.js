@@ -2,16 +2,16 @@ import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Jumbotron from "./components/Jumbotron";
-import Login from "./pages/Login";
+import Chardonnay from "./pages/Chardonnay";
 import Courses from "./pages/Courses";
 import CourseNav from "./pages/CourseNav";
-import MainNav from "./pages/MainNav";
-import Chardonnay from "./pages/Chardonnay";
+import ExamHome from "./pages/ExamHome";
 import Exam from "./pages/Exam";
+import Exam2 from "./pages/Exam2";
+import Login from "./pages/Login";
+import MainNav from "./pages/MainNav";
 import Results from "./pages/Results";
 import Register from "./pages/Register";
-import ExamHome from "./pages/ExamHome";
-import Exam2 from "./pages/Exam2";
 
 const App = () => (
   <Router>
