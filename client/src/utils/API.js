@@ -2,7 +2,7 @@ import axios from "axios";
  export default {
 
   getExam: function() {
-    return axios.get("/api/question")
+    return axios.get("/api/exam")
   },
 
   getUser: function(emailAddress,password){
